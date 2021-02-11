@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42.913" height="42.913" viewBox="0 0 42.913 42.913">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#cd00ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}.cls-2{fill:#cd00ff;font-size:12px;font-family:MuseoSansCyrillic-700,&quot;Museo Sans Cyrillic 700&quot;;font-weight:700;letter-spacing:-.01em}
+        </style>
+    </defs>
+    <g id="Group_4898" data-name="Group 4898" transform="translate(-1261 -714.087)">
+        <g id="Group_2809" data-name="Group 2809" transform="translate(1262 715.087)">
+            <g id="loader">
+                <path id="Line_360" d="M0 0v8.183" class="cls-1" data-name="Line 360" transform="translate(20.457)"/>
+                <path id="Line_361" d="M0 0v6.5" class="cls-1" data-name="Line 361" transform="translate(20.457 34.413)"/>
+                <path id="Line_362" d="M0 0l4.506 4.42" class="cls-1" data-name="Line 362" transform="translate(5.994 5.994)"/>
+                <path id="Line_363" d="M0 0l4.419 4.506" class="cls-1" data-name="Line 363" transform="translate(30.5 30.413)"/>
+                <path id="Line_364" d="M0 0h7.5" class="cls-1" data-name="Line 364" transform="translate(0 20.457)"/>
+                <path id="Line_365" d="M0 0h6.413" class="cls-1" data-name="Line 365" transform="translate(34.5 20.457)"/>
+                <path id="Line_366" d="M0 4.506L4.506 0" class="cls-1" data-name="Line 366" transform="translate(5.994 30.413)"/>
+                <path id="Line_367" d="M0 4.42L4.419 0" class="cls-1" data-name="Line 367" transform="translate(30.5 5.994)"/>
+            </g>
+        </g>
+        <text id="ua" class="cls-2" transform="translate(1275 740)">
+            <tspan x="0" y="0">UA</tspan>
+        </text>
+    </g>
+</svg>

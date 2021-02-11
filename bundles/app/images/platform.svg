@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="36.57" viewBox="0 0 57 36.57">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:none}.cls-1{stroke:#707070}.cls-2{stroke:#cd00ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}.cls-3{clip-path:url(#clip-path)}.cls-4{fill:#cd00ff}
+        </style>
+        <clipPath id="clip-path">
+            <path id="Path_2344" d="M10277.808 8957.909h13.006v-9.888h-56.259v34.189h40.121v-24.3z" class="cls-1" data-name="Path 2344" transform="translate(-9259 -8221)"/>
+        </clipPath>
+    </defs>
+    <g id="Group_4983" data-name="Group 4983" transform="translate(-968 -719.43)">
+        <g id="smartphone_1_" data-name="smartphone (1)" transform="translate(1007 731)">
+            <rect id="Rectangle_2512" width="12" height="22" class="cls-2" data-name="Rectangle 2512" rx="2" transform="translate(5 2)"/>
+            <path id="Line_430" d="M0 0" class="cls-2" data-name="Line 430" transform="translate(11 20)"/>
+        </g>
+        <g id="Mask_Group_106" class="cls-3" data-name="Mask Group 106" transform="translate(-7.555 -7.591)">
+            <g id="monitor_1_" data-name="monitor (1)" transform="translate(979.534 730.355)">
+                <rect id="Rectangle_2343" width="39.096" height="27.367" class="cls-2" data-name="Rectangle 2343" rx="2" transform="translate(5.864)"/>
+                <path id="Line_394" d="M0 0h50.825" class="cls-2" data-name="Line 394" transform="translate(0 27.367)"/>
+            </g>
+        </g>
+        <g id="Group_4901" data-name="Group 4901" transform="translate(991.176 730.233)">
+            <g id="Group_30" data-name="Group 30">
+                <g id="Group_29" data-name="Group 29">
+                    <path id="Path_6" d="M2749.505 1979.826a3.564 3.564 0 0 1 0-7.128v-2.149a5.713 5.713 0 1 0 5.714 5.713h-2.15a3.564 3.564 0 0 1-3.564 3.564z" class="cls-4" data-name="Path 6" transform="translate(-2743.792 -1970.549)"/>
+                </g>
+            </g>
+            <path id="Path_7" d="M2788.97 1980.033a1.188 1.188 0 0 1-1.68 0 1.189 1.189 0 0 1 0-1.681l2.695-2.694a1.188 1.188 0 0 1 1.681 0 1.189 1.189 0 0 1 0 1.681z" class="cls-4" data-name="Path 7" transform="translate(-2781.234 -1974.68)"/>
+        </g>
+    </g>
+</svg>

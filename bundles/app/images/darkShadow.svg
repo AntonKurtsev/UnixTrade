@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="553" viewBox="0 0 1920 553">
+    <defs>
+        <style>
+            .cls-1{fill:url(#linear-gradient)}
+        </style>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y1=".317" y2=".677" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-opacity="0"/>
+            <stop offset="1"/>
+        </linearGradient>
+    </defs>
+    <path id="Layer_63" d="M0 0h1920v553H0z" class="cls-1" data-name="Layer 63"/>
+</svg>

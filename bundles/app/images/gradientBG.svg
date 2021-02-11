@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1921" height="745" viewBox="0 0 1921 745">
+    <defs>
+        <style>
+            .cls-1{opacity:.84}.cls-2{clip-path:url(#clip-path)}.cls-3{opacity:.4;fill:url(#radial-gradient)}
+        </style>
+        <clipPath id="clip-path">
+            <path id="Layer_75" d="M0 0h1921v745H0z" class="cls-1" data-name="Layer 75" transform="translate(0 2528.752)"/>
+        </clipPath>
+        <radialGradient id="radial-gradient" cx=".5" cy=".5" r=".415" gradientTransform="matrix(0 1 -.479 0 .739 0)">
+            <stop offset="0" stop-color="#f46fff"/>
+            <stop offset="1" stop-color="#e05efe" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+    <g id="Mask_Group_97" class="cls-2" data-name="Mask Group 97" transform="translate(0 -2528.752)">
+        <ellipse id="Ellipse_63" cx="873.882" cy="961" class="cls-3" data-name="Ellipse 63" rx="873.882" ry="961" transform="rotate(-90 2038.379 2038.879)"/>
+    </g>
+</svg>

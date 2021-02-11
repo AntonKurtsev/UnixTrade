@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.001" height="23.999" viewBox="0 0 28.001 23.999">
+    <defs>
+        <style>
+            .cls-1{fill:url(#linear-gradient)}
+        </style>
+        <linearGradient id="linear-gradient" x1=".13" x2=".855" y1=".043" y2=".936" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f46fff"/>
+            <stop offset="1" stop-color="#79dfff"/>
+        </linearGradient>
+    </defs>
+    <path id="Union_3" d="M-9243.552-8196.447v-21.1a1.447 1.447 0 0 1 1.452-1.453 1.449 1.449 0 0 1 1.45 1.447v21.1a1.449 1.449 0 0 1-1.45 1.447 1.447 1.447 0 0 1-1.452-1.441zm-5.793 0v-21.1a1.447 1.447 0 0 1 1.445-1.453 1.449 1.449 0 0 1 1.45 1.447v21.1a1.449 1.449 0 0 1-1.45 1.447 1.447 1.447 0 0 1-1.445-1.441zm16.761-4.913l-5.979-4.306a1 1 0 0 1 0-1.624l5.979-4.308a1 1 0 0 1 1.585.811v8.616a1 1 0 0 1-1 1 .972.972 0 0 1-.585-.189zm-26.416-.811v-8.616a1 1 0 0 1 1.585-.811l5.979 4.308a1 1 0 0 1 0 1.624l-5.979 4.306a.976.976 0 0 1-.581.191 1 1 0 0 1-1.004-1.002z" class="cls-1" data-name="Union 3" transform="rotate(180 -4615.5 -4097.5)"/>
+</svg>

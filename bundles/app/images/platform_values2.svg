@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36.252" height="35.911" viewBox="0 0 36.252 35.911">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#cd00ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="Group_4935" data-name="Group 4935" transform="translate(-658.745 -4074.089)">
+        <g id="trending-up" transform="translate(660.159 4075.503)">
+            <path id="Path_2353" d="M34.424 6L19.991 20.433l-7.6-7.6L1 24.231" class="cls-1" data-name="Path 2353" transform="translate(-1 -6)"/>
+            <path id="Path_2354" d="M17 6h9.116v9.116" class="cls-1" data-name="Path 2354" transform="translate(7.308 -6)"/>
+        </g>
+        <g id="bar-chart" transform="translate(660.319 4095.762)">
+            <path id="Line_441" d="M0 6V0" class="cls-1" data-name="Line 441" transform="translate(17.549 7.238)"/>
+            <path id="Line_442" d="M0 13V0" class="cls-1" data-name="Line 442" transform="translate(33.549 .238)"/>
+            <path id="Line_444" d="M0 9V0" class="cls-1" data-name="Line 444" transform="translate(26.549 4.238)"/>
+            <path id="Line_445" d="M0 9V0" class="cls-1" data-name="Line 445" transform="translate(8.549 4.238)"/>
+            <path id="Line_443" d="M0 3V0" class="cls-1" data-name="Line 443" transform="translate(-.451 10.238)"/>
+        </g>
+    </g>
+</svg>

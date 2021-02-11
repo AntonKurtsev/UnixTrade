@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.618" height="28.631" viewBox="0 0 24.618 28.631">
+    <defs>
+        <style>
+            .cls-1{fill:url(#linear-gradient)}
+        </style>
+        <linearGradient id="linear-gradient" x1=".166" x2=".684" y1=".065" y2="1.031" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f46fff"/>
+            <stop offset="1" stop-color="#79dfff"/>
+        </linearGradient>
+    </defs>
+    <path id="zap" d="M16.677 2L3 19.179h12.309l-1.368 11.452 13.677-17.179H15.309z" class="cls-1" transform="translate(-3 -2)"/>
+</svg>

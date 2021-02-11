@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54.575" height="53.789" viewBox="0 0 54.575 53.789">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="codepen" transform="translate(1.393 1)">
+        <path id="Path_2222" d="M27.895 2l25.894 16.831v18.127L27.895 53.789 2 36.958V18.831z" class="cls-1" data-name="Path 2222" transform="translate(-2 -2)"/>
+        <path id="Line_358" d="M0 16.831V0" class="cls-1" data-name="Line 358" transform="translate(25.895 34.958)"/>
+        <path id="Path_2223" d="M53.789 8.5L27.895 26.626 2 8.5" class="cls-1" data-name="Path 2223" transform="translate(-2 8.331)"/>
+        <path id="Path_2224" d="M2 26.626L27.895 8.5l25.894 18.126" class="cls-1" data-name="Path 2224" transform="translate(-2 8.331)"/>
+        <path id="Line_359" d="M0 0v16.831" class="cls-1" data-name="Line 359" transform="translate(25.895)"/>
+    </g>
+</svg>

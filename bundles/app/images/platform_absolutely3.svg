@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="36" viewBox="0 0 44 36">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="sliders" transform="translate(.104 -2.097)">
+        <path id="Line_432" d="M0 13V0" class="cls-1" data-name="Line 432" transform="translate(6.896 24.097)"/>
+        <path id="Line_433" d="M0 13V0" class="cls-1" data-name="Line 433" transform="translate(6.896 3.097)"/>
+        <path id="Line_434" d="M0 17V0" class="cls-1" data-name="Line 434" transform="translate(21.896 20.097)"/>
+        <path id="Line_435" d="M0 9V0" class="cls-1" data-name="Line 435" transform="translate(21.896 3.097)"/>
+        <path id="Line_436" d="M0 9V0" class="cls-1" data-name="Line 436" transform="translate(36.896 28.097)"/>
+        <path id="Line_437" d="M0 17V0" class="cls-1" data-name="Line 437" transform="translate(36.896 3.097)"/>
+        <path id="Line_438" d="M0 0h12" class="cls-1" data-name="Line 438" transform="translate(.896 24.097)"/>
+        <path id="Line_439" d="M0 0h12" class="cls-1" data-name="Line 439" transform="translate(15.896 12.097)"/>
+        <path id="Line_440" d="M0 0h12" class="cls-1" data-name="Line 440" transform="translate(30.896 28.097)"/>
+    </g>
+</svg>

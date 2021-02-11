@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="682.207" viewBox="0 0 1920 682.207">
+    <defs>
+        <style>
+            .cls-1{opacity:.57}.cls-2,.cls-4{opacity:.21}.cls-2{fill:url(#linear-gradient)}.cls-3{opacity:.13;fill:url(#linear-gradient-2)}.cls-4{fill:url(#linear-gradient-3)}
+        </style>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f700ff"/>
+            <stop offset="1" stop-color="#0cf" stop-opacity=".478"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f700ff"/>
+            <stop offset="1" stop-color="#0cf"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-3" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f700ff"/>
+            <stop offset="1" stop-color="#0cf" stop-opacity=".529"/>
+        </linearGradient>
+    </defs>
+    <g id="Group_4937" class="cls-1" data-name="Group 4937" transform="translate(0 -2686.793)">
+        <path id="Shape_4" d="M0 2549.238l232.727-41.166 307.938 7.589 271.042-94.561L1148 2525.2l310 49.174 311.15-370.674 150.85-42.816v682.207H0z" class="cls-2" data-name="Shape 4" transform="translate(0 525.909)"/>
+        <path id="Shape_4-2" d="M0 2737.5l232.727-47.072 307.938 8.678 271.042-108.122 324.967 84.786 333.481-255.962 285.233-2.149L1920 2322v595.85H0z" class="cls-3" data-name="Shape 4" transform="translate(0 451.15)"/>
+        <path id="Shape_4-3" d="M1.419 2675.948l231.308-93.387 307.938 38.047 271.042-108.375 324.966 90.5 333.481-211.562 285.233 55.917L1920 2322v421.4H0z" class="cls-4" data-name="Shape 4" transform="translate(0 625.606)"/>
+    </g>
+</svg>

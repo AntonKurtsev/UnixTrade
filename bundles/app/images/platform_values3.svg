@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="34" viewBox="0 0 37 34">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#cd00ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="Group_4929" data-name="Group 4929" transform="translate(-1414 -1943)">
+        <g id="monitor_1_" data-name="monitor (1)" transform="translate(1413 1941)">
+            <rect id="Rectangle_2599" width="35" height="25" class="cls-1" data-name="Rectangle 2599" rx="2" transform="translate(2 3)"/>
+            <path id="Line_447" d="M0 0h14" class="cls-1" data-name="Line 447" transform="translate(13 35)"/>
+            <path id="Line_448" d="M0 0v7" class="cls-1" data-name="Line 448" transform="translate(20 28)"/>
+        </g>
+        <g id="list" transform="translate(1419 1945)">
+            <path id="Line_449" d="M0 0h14" class="cls-1" data-name="Line 449" transform="translate(9 6)"/>
+            <path id="Line_450" d="M0 0h14" class="cls-1" data-name="Line 450" transform="translate(9 12)"/>
+            <path id="Line_451" d="M0 0h9" class="cls-1" data-name="Line 451" transform="translate(9 18)"/>
+            <path id="Line_452" d="M0 0" class="cls-1" data-name="Line 452" transform="translate(3 6)"/>
+            <path id="Line_453" d="M0 0" class="cls-1" data-name="Line 453" transform="translate(3 12)"/>
+            <path id="Line_454" d="M0 0" class="cls-1" data-name="Line 454" transform="translate(3 18)"/>
+        </g>
+    </g>
+</svg>

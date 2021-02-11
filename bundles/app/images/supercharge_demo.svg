@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.348" height="19.185" viewBox="0 0 25.348 19.185">
+    <defs>
+        <style>
+            .cls-1{fill:url(#linear-gradient)}
+        </style>
+        <linearGradient id="linear-gradient" x1=".287" x2=".759" y1="1" y2=".296" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f46fff"/>
+            <stop offset="1" stop-color="#79dfff"/>
+        </linearGradient>
+    </defs>
+    <g id="Group_4905" data-name="Group 4905" transform="translate(-1355.534 -1585.408)">
+        <path id="Polygon_5" d="M8.829.9a1 1 0 0 1 1.527 0l7.438 8.8a1 1 0 0 1-.764 1.646H2.155A1 1 0 0 1 1.391 9.7z" class="cls-1" data-name="Polygon 5" transform="rotate(90 -102.263 1483.145)"/>
+        <path id="Polygon_7" d="M8.829.9a1 1 0 0 1 1.527 0l7.438 8.8a1 1 0 0 1-.764 1.646H2.155A1 1 0 0 1 1.391 9.7z" class="cls-1" data-name="Polygon 7" transform="rotate(90 -105.763 1479.645)"/>
+        <path id="Polygon_8" d="M8.829.9a1 1 0 0 1 1.527 0l7.438 8.8a1 1 0 0 1-.764 1.646H2.155A1 1 0 0 1 1.391 9.7z" class="cls-1" data-name="Polygon 8" transform="rotate(90 -109.263 1476.145)"/>
+    </g>
+</svg>

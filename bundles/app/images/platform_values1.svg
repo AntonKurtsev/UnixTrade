@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#cd00ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="Group_4934" data-name="Group 4934" transform="translate(-675 -3864)">
+        <g id="briefcase_1_" data-name="briefcase (1)" transform="translate(673.8 3862)">
+            <rect id="Rectangle_2598" width="37" height="27" class="cls-1" data-name="Rectangle 2598" rx="2" transform="translate(2.2 10)"/>
+            <path id="Path_2355" d="M22.46 10V6.615A3.615 3.615 0 0 0 18.845 3h-7.23A3.615 3.615 0 0 0 8 6.615V10" class="cls-1" data-name="Path 2355" transform="translate(5.388)"/>
+        </g>
+        <g id="trello" transform="translate(684.661 3881.795)">
+            <path id="Rectangle_2601" d="M0 0h3v10H0z" class="cls-1" data-name="Rectangle 2601" transform="translate(8.339 .205)"/>
+            <path id="Rectangle_2603" d="M0 0h3v14H0z" class="cls-1" data-name="Rectangle 2603" transform="translate(16.339 -3.795)"/>
+            <path id="Rectangle_2602" d="M0 0h3v6H0z" class="cls-1" data-name="Rectangle 2602" transform="translate(.339 4.205)"/>
+        </g>
+    </g>
+</svg>
