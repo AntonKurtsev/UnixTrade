@@ -210,7 +210,23 @@ input.valid {
     display: flex;
     align-items: center;
 }
-.header__btn {
+.reg-btn {
+    padding: 5px;
+    background-color: #e7bf52;
+    color: #333;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #e7bf52;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.reg-btn:hover {
+    background-color: #333333;
+    color: #e7bf52;
+}
+/* .header__btn {
     padding: 5px;
     background-color: #e7bf52;
     color: #333;
@@ -221,11 +237,11 @@ input.valid {
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s;
-}
-.header__btn:hover {
+} */
+/* .header__btn:hover {
     background-color: #333333;
     color: #e7bf52;
-}
+} */
 .header__menu-btn {
     border: none;
     outline: none;
@@ -506,13 +522,187 @@ input.valid {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
+.section__suptitle {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: #e7bf52;
+    margin-bottom: 0.75rem;
+}
 .section__title {
     font-weight: 500;
     font-size: 2.5rem;
     line-height: 3.125rem;
-    margin: 0 0 2.25rem;
+    max-width: 700px;
+    margin: 0 auto 0.75rem;
 }
 .section__subtitle {
     font-size: 1.125rem;
+    line-height: 1.25rem;
+}
+.known-first__title-block--second {
+    margin-top: 40px;
+}
+.known-first__text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
     line-height: 2rem;
+}
+.known-first__text + .known-first__text {
+    margin-top: 16px;
+}
+.section__btn {
+    display: block;
+    margin: 60px auto 0;
+    padding: 15px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 10px;
+}
+.benefits-section {
+    border-bottom: 12px solid #e7bf52;
+}
+.benefits__btn {
+    margin: 92px 0 0;
+}
+
+.earnings {
+    background-color: #000000;
+    padding: 120px 0 50px;
+    border-bottom: 12px solid #e7bf52;
+}
+.earnings__title-block {
+    text-align: left;
+}
+.earnings__title {
+    margin-left: 0;
+    margin-bottom: 56px;
+    color: #fff;
+}
+.earnings-accordeon {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.earnings-accordeon__item {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.earnings-accordeon__item--active {
+    background-color: #e7bf52;
+}
+.earnings-accordeon__item--active .earnings-accordeon__question {
+    color: #000;
+}
+.earnings-accordeon__item--active .earnings-accordeon__question::after {
+    opacity: 0;
+    background-color: #000000;
+}
+.earnings-accordeon__item--active .earnings-accordeon__answer {
+    color: #fff;
+}
+.earnings-accordeon__item + .earnings-accordeon__item {
+    margin-top: 30px;
+}
+.earnings-accordeon__question {
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 2.8125rem;
+    color: #222222;
+    position: relative;
+}
+.earnings-accordeon__question::before {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: #222222;
+}
+.earnings-accordeon__question::after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: #222222;
+    transition: all 0.5s;
+}
+.earnings-accordeon__answer {
+    padding: 0 30px 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: none;
+}
+
+.team {
+    padding: 60px 0 80px;
+    background-color: #0e0e0e;
+    color: #fff;
+    border-bottom: 12px solid #e7bf52;
+}
+.team__title-block {
+    margin-bottom: 64px;
+}
+.team__title {
+    color: #fff;
+}
+.team__subtitle {
+    color: rgba(255, 255, 255, 0.7);
+}
+.team__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.team__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 33%;
+    text-align: center;
+}
+.team__img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 26px;
+    border: 6px solid #e7bf52;
+}
+.team__name {
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+.team__job {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.team__socials {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+.team__social-link {
+    margin: 0 6px;
+    height: 28px;
+    width: 28px;
+}
+.team__social-icon {
+    width: 28px;
+    height: 28px;
 }

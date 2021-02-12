@@ -155,3 +155,11 @@ $('.form, .sign-up-form__form').each(function(){
         }
     });
 });
+
+// Accordeon
+$('.earnings-accordeon__item').click(function() {
+    $('.earnings-accordeon__item').not($(this)).children('.earnings-accordeon__answer').slideUp();
+    $('.earnings-accordeon__item').not($(this)).removeClass('earnings-accordeon__item--active');
+    $(this).children('.earnings-accordeon__answer').slideToggle(500);
+    $(this).toggleClass('earnings-accordeon__item--active');
+});

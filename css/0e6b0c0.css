@@ -4887,14 +4887,14 @@ footer .footer-texts p {
     width: 50%;
     padding: 1.5rem 0.9375rem 1.5rem 0;
 }
-.homepage .know-first p {
+/* .homepage .know-first p {
     max-width: 590px;
     width: 50%;
     font-size: 1.125rem;
     line-height: 2rem;
     padding: 1.5rem 0;
     text-align: left;
-}
+} */
 .homepage .know-first b {
     font-family: 'Montserrat', sans-serif;;
     font-weight: 700;
@@ -5251,7 +5251,7 @@ footer .footer-texts p {
     font-family: Open Sans, sans-serif;
     font-size: 1rem;
     line-height: 1.875rem;
-    padding: 1rem 0 3rem;
+    padding: 1rem 0 0;
     transition: 1.5s ease-out 0.4s;
 }
 .homepage-news-wrap {
