@@ -124,7 +124,7 @@ $('.form, .sign-up-form__form').each(function(){
             },
             telegram: {
                 required: true,
-                minlength: 19,
+                minlength: 2,
             },
             email: {
                 required: true,
