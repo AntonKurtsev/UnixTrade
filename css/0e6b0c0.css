@@ -4670,7 +4670,7 @@ footer .footer-texts p {
     margin-bottom: 1.5rem;
 }
 .homepage .page-header .title-description-wrap h5 {
-    color: #fff;
+    color: #e7bf52;
     font-family: 'Montserrat', sans-serif;;
     font-weight: 100;
     letter-spacing: 0.625rem;
@@ -5203,6 +5203,7 @@ footer .footer-texts p {
 .homepage .start-with h2 {
     font-family: 'Montserrat', sans-serif;;
     font-weight: 500;
+    text-transform: uppercase;
 }
 .homepage .start-with .label-blue {
     color: #e7bf52 !important;
