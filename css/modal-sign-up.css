@@ -568,6 +568,58 @@ input.valid {
     margin: 92px 0 0;
 }
 
+.advantages {
+    padding: 80px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+.advantages__title-block {
+    margin-bottom: 40px;
+}
+.advantages__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.advantages__img-block {
+    flex-basis: 33%;
+}
+.advantages__img {
+    width: 100%;
+    height: auto;
+}
+.advantages__item {
+    position: relative;
+    padding-left: 40px;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #000000;
+}
+.advantages__item + .advantages__item {
+    margin-top: 25px;
+}
+.advantages__item::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    background-image: url('../bundles/app/images/list-style.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 26px;
+    height: 26px;
+}
+.advantages__text {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #333;
+}
+
 .earnings {
     background-color: #000000;
     padding: 120px 0 50px;
