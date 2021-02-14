@@ -168,9 +168,9 @@ $('.earnings-accordeon__item').click(function() {
 $('.reviews__item-btn').click(function() {
     var reviewHeight = $(this).next($('.reviews__text')).height();
     console.log(reviewHeight);
-    $('.reviews__content').not($(this)).css({height: 140});
-    if ($(this).parent().height() > 140) {
-        $(this).parent().css({height: 140});
+    $('.reviews__content').not($(this)).css({height: 120});
+    if ($(this).parent().height() > 120) {
+        $(this).parent().css({height: 120});
     } else {
         $(this).parent().css({'height': reviewHeight + 90});
     }

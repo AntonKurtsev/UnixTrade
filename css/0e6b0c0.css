@@ -5056,6 +5056,7 @@ footer .footer-texts p {
     float: left;
     width: 66%;
     overflow: hidden;
+    margin-bottom: 60px;
 }
 .homepage .b-supercharge-carts > div {
     float: left;
@@ -5549,9 +5550,9 @@ footer .footer-texts p {
     .homepage .know-first h2 {
         max-width: 100%;
     }
-    .homepage .know-first p {
+    /* .homepage .know-first p {
         max-width: 35.625rem;
-    }
+    } */
     .homepage .platform-benefits-row {
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -8247,19 +8248,19 @@ footer .footer-texts p {
         width: 100%;
     }
     .percline1{
-        width: 70%;
+        width: 69%;
     }
     .percline2{
-        width: 55%;
+        width: 54%;
     }
     .percline3{
-        width: 40%;
+        width: 39%;
     }
     .percline4{
-        width: 25%;
+        width: 24%;
     }
     .percline5{
-        width: 10%;
+        width: 9%;
     }
     .homepage .page-header .page-header-cols-item.page-header-cols-item-inner div,.homepage .page-header .page-header-cols-item.page-header-cols-item-popular div{
         position: relative;

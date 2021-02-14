@@ -383,138 +383,6 @@ input.valid {
     margin: 16px 0;
 }
 
-@media (max-width: 1300px) {
-    .header-menu {
-        display: flex !important;
-    }
-}
-
-@media (max-width: 981px){
-    .header-menu {
-        display: none !important;
-    }
-    .header__menu-btn {
-        display: block;
-    }
-    .sign-up-form {
-        display: none;
-    }
-    .page-header-cols__inner {
-        width: 100%;
-    }
-    .page-haeder__info {
-        min-width: 100%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .title-description-wrap,
-    .title-wrap h1 {
-        min-width: 100%;
-        max-width: 100%;
-        text-align: center;
-    }
-    .page-header__cols {
-        margin-top: 40px;
-    }
-    .page-header-cols__inner {
-        justify-content: space-around
-    }
-    .page-header-cols__item {
-        flex-basis: 33%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .page-header-cols__item::after {
-        width: 75%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
-@media (max-width: 767px) {
-    .container {
-        max-width: 95%;
-    }
-    .header__btn {
-        padding: 7px;
-        font-size: 16px;
-    }
-    .title-description-wrap {
-        padding-right: 0;
-    }
-}
-
-@media (max-width: 479px) {
-    .page-header {
-        padding-top: 55px;
-    }
-    .header {
-        padding: 10px 0;
-    }
-    .header__inner {
-        flex-wrap: wrap;
-    }
-    .header__logo {
-        top: 0px;
-        text-align: left;
-    }
-    .header__logo-link {
-        max-height: 30px;
-        margin-right: 0;
-    }
-    .header__logo-link::after {
-        display: none;
-    }
-    .header__logo-img {
-        width: 100px !important;
-    }
-    .header__logo-text {
-        display: none;
-    }
-    .header__btn {
-        flex-basis: 75%;
-        margin: 8px auto 0;
-        padding: 5px;
-        font-size: 16px;
-        order: 1;
-    }
-    .title-description-wrap {
-        margin-top: 0;
-    }
-    .page-header__cols {
-        margin-top: 80px;
-    }
-    .page-header-cols__inner {
-        flex-wrap: wrap;
-    }
-    .page-header-cols__item {
-        flex-basis: 50%;
-    }
-    .page-header-cols__item:last-child {
-        margin-top: 50px;
-    }
-    .page-header-cols__item::after {
-        bottom: -20px;
-        height: 6px;
-    }
-    .page-header-cols__img {
-        width: 38px;
-    }
-    .page-header-cols__text {
-        color: rgba(255, 255, 255, 0.7);
-        font-size: 16px;
-        line-height: 18px;
-    }
-    .item-num {
-        margin: 8px 0;
-        font-size: 20px;
-    }
-}
-
 .partners {
     padding: 60px 0;
 }
@@ -583,9 +451,6 @@ input.valid {
 }
 .benefits-section {
     border-bottom: 12px solid #e7bf52;
-}
-.benefits__btn {
-    margin: 92px 0 0;
 }
 
 .advantages {
@@ -797,10 +662,12 @@ input.valid {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 .reviews__item {
     position: relative;
-    flex-basis: 19%;
+    margin-bottom: 15px;
+    flex-basis: 32%;
     padding: 15px;
     border: 2px solid #e7bf52;
     border-radius: 8px;
@@ -808,7 +675,7 @@ input.valid {
     overflow: hidden;
 }
 .reviews__content {
-    height: 140px;
+    height: 120px;
     overflow-y: hidden;
     transition: all 0.5s;
 }
@@ -842,4 +709,238 @@ input.valid {
 }
 .reviews__item-btn:hover {
     padding: 20px 5px 10px;
+}
+
+@media (max-width: 1300px) {
+    .header-menu {
+        display: flex !important;
+    }
+}
+
+@media (max-width: 981px){
+    .header-menu {
+        display: none !important;
+    }
+    .header__menu-btn {
+        display: block;
+    }
+    .sign-up-form {
+        display: none;
+    }
+    .page-header-cols__inner {
+        width: 100%;
+    }
+    .page-haeder__info {
+        min-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title-description-wrap,
+    .title-wrap h1 {
+        min-width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .page-header__cols {
+        margin-top: 40px;
+    }
+    .page-header-cols__inner {
+        justify-content: space-around
+    }
+    .page-header-cols__item {
+        flex-basis: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .page-header-cols__item::after {
+        width: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .known-first__text {
+        max-width: 100%;
+    }
+    .advantages__img-block {
+        display: none;
+    }
+    .reviews__item-btn:hover {
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 95%;
+    }
+    .header__btn {
+        padding: 7px;
+        font-size: 16px;
+    }
+    .title-description-wrap {
+        padding-right: 0;
+    }
+    .reviews__item {
+        flex-basis: 48%;
+    }
+    .team__inner {
+        flex-wrap: wrap;
+    }
+    .team__item {
+        flex-basis: 49%;
+    }
+    .team__item:last-child {
+        margin: 15px auto 0;
+    }
+    .partners__inner {
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+    .partners__img-block {
+        flex-basis: 45%;
+        margin-top: -90px;
+    }
+    .partners__img-block:last-child {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 479px) {
+    .section__title {
+        font-size: 2rem;
+        line-height: 2.5rem
+    }
+    .page-header {
+        padding-top: 55px;
+    }
+    .header {
+        padding: 10px 0;
+    }
+    .header__inner {
+        flex-wrap: wrap;
+    }
+    .header__logo {
+        top: 0px;
+        text-align: left;
+    }
+    .header__logo-link {
+        max-height: 30px;
+        margin-right: 0;
+    }
+    .header__logo-link::after {
+        display: none;
+    }
+    .header__logo-img {
+        width: 100px !important;
+    }
+    .header__logo-text {
+        display: none;
+    }
+    .header__btn {
+        flex-basis: 75%;
+        margin: 8px auto 0;
+        padding: 5px;
+        font-size: 16px;
+        order: 1;
+    }
+    .title-description-wrap {
+        margin-top: 0;
+    }
+    .page-header__cols {
+        margin-top: 80px;
+    }
+    .page-header-cols__inner {
+        flex-wrap: wrap;
+    }
+    .page-header-cols__item {
+        flex-basis: 50%;
+    }
+    .page-header-cols__item:last-child {
+        margin-top: 50px;
+    }
+    .page-header-cols__item::after {
+        bottom: -20px;
+        height: 6px;
+    }
+    .page-header-cols__img {
+        width: 38px;
+    }
+    .page-header-cols__text {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .item-num {
+        margin: 8px 0;
+        font-size: 20px;
+    }
+    .homepage .b-supercharge-title {
+        padding-top: 0;
+        font-size: 2.25rem;
+        line-height: 2.8125rem;
+    }
+    .homepage .b-supercharge-title p {
+        font-size: 1.125rem;
+    }
+    .advantages {
+        padding: 60px 0;
+    }
+    .advantages__item {
+        padding-left: 30px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .advantages__item::before {
+        top: 4px;
+        width: 18px;
+        height: 18px;
+    }
+    .advantages__text {
+        font-size: 22px;
+        line-height: 26px;
+        text-align: left;
+    }
+    .earnings {
+        padding: 60px 0;
+    }
+    .earnings__title {
+        margin-bottom: 30px;
+    }
+    .earnings-accordeon__item {
+        padding: 10px;
+    }
+    .earnings-accordeon__question {
+        font-size: 1.75rem;
+        line-height: 2.125rem
+    }
+    .earnings-accordeon__answer {
+        margin-top: 10px;
+        padding-right: 10px;
+    }
+    .reviews__item {
+        flex-basis: 100%;
+    }
+    .team__title-block {
+        margin-bottom: 46px;
+    }
+    .team__item {
+        flex-basis: 100%;
+    }
+    .team__item + .team__item {
+        margin-top: 25px;
+    }
+    .team__img {
+        margin-bottom: 12px;
+    }
+    .team__socials {
+        margin-top: 12px;
+    }
+    .partners__img-block {
+        flex-basis: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
