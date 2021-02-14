@@ -163,3 +163,15 @@ $('.earnings-accordeon__item').click(function() {
     $(this).children('.earnings-accordeon__answer').slideToggle(500);
     $(this).toggleClass('earnings-accordeon__item--active');
 });
+
+// Reviews
+$('.reviews__item-btn').click(function() {
+    var reviewHeight = $(this).next($('.reviews__text')).height();
+    console.log(reviewHeight);
+    $('.reviews__content').not($(this)).css({height: 140});
+    if ($(this).parent().height() > 140) {
+        $(this).parent().css({height: 140});
+    } else {
+        $(this).parent().css({'height': reviewHeight + 90});
+    }
+});

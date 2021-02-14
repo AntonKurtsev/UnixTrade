@@ -796,6 +796,7 @@ input.valid {
 .reviews__inner {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 .reviews__item {
     position: relative;
@@ -809,6 +810,7 @@ input.valid {
 .reviews__content {
     height: 140px;
     overflow-y: hidden;
+    transition: all 0.5s;
 }
 .reviews__author {
     display: inline-block;
