@@ -927,6 +927,7 @@ input.valid {
         margin-bottom: 46px;
     }
     .team__item {
+        flex-direction: row;
         flex-basis: 100%;
     }
     .team__item + .team__item {
