@@ -636,21 +636,6 @@ input.valid {
     line-height: 16px;
     color: rgba(255, 255, 255, 0.7);
 }
-.team__socials {
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    margin-top: 18px;
-}
-.team__social-link {
-    margin: 0 6px;
-    height: 28px;
-    width: 28px;
-}
-.team__social-icon {
-    width: 28px;
-    height: 28px;
-}
 
 .reviews {
     padding: 60px 0;
@@ -935,9 +920,6 @@ input.valid {
     }
     .team__img {
         margin-bottom: 12px;
-    }
-    .team__socials {
-        margin-top: 12px;
     }
     .partners__img-block {
         flex-basis: 80%;
