@@ -145,6 +145,14 @@ $('.form, .sign-up-form__form').each(function(){
                 required: "Пожалуйста введите ваш телефон",
                 minlength: jQuery.validator.format("Минимум 9 цифр"),
             },
+            password: {
+                required: "Пожалуйста придумайте пароль",
+                minlength: jQuery.validator.format("Минимум 8 знаков"),
+            },
+            password__confirmation: {
+                required: "Пожалуйста повторите пароль",
+                equalTo: "Пароли должны совпадать",
+            }
         }
     });
 });
