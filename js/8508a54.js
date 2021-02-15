@@ -126,6 +126,15 @@ $('.form, .sign-up-form__form').each(function(){
                 required: true,
                 minlength: 17,
             },
+            password:{
+                required: true,
+                minlength: 8,
+            },
+            password__confirmation: {
+                required: true,
+                equalTo: "#password",
+                minlength: 8,
+            },
         },
         messages: {
             email: {
