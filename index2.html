@@ -4,7 +4,21 @@
         <title>Unix Trade</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-        <link rel="shortcut icon" href="bundles/app/images/favicon/favicon-32x32.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="bundles/app/images/">
+        <link rel="apple-touch-icon" sizes="60x60" href="bundles/app/images/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="bundles/app/images/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="bundles/app/images/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="bundles/app/images/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="bundles/app/images/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="bundles/app/images/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="bundles/app/images/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="bundles/app/images/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="bundles/app/images/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="bundles/app/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="bundles/app/images/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="bundles/app/images/favicon-16x16.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <!-- BEGIN HEADER CSS -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -34,21 +48,10 @@
                         <div class="input-group">
                             <!-- <h6 class="input-title"></h6> -->
                             <input 
-                            type="text" 
+                            type="tel" 
                             class="sign-up-modal__input" 
-                            placeholder="Имя" 
-                            name="name" 
-                            required
-                            />
-                        </div>
-                        <!-- /.input-group -->
-                        <div class="input-group">
-                            <!-- <h6 class="input-title">Your name*</h6> -->
-                            <input 
-                            type="text" 
-                            class="sign-up-modal__input telegram-input" 
-                            placeholder="Telrgram" 
-                            name="telegram" 
+                            placeholder="Phone number" 
+                            name="phone" 
                             required
                             />
                         </div>
@@ -57,8 +60,8 @@
                             <!-- <h6 class="input-title">Your name*</h6> -->
                             <input 
                             type="email" 
-                            class="sign-up-modal__input" 
-                            placeholder="Email" 
+                            class="sign-up-modal__input telegram-input" 
+                            placeholder="E-mail" 
                             name="email" 
                             required
                             />
@@ -67,10 +70,21 @@
                         <div class="input-group">
                             <!-- <h6 class="input-title">Your name*</h6> -->
                             <input 
-                            type="tel" 
+                            type="password" 
+                            class="sign-up-modal__input" 
+                            placeholder="Password" 
+                            name="password" 
+                            required
+                            />
+                        </div>
+                        <!-- /.input-group -->
+                        <div class="input-group">
+                            <!-- <h6 class="input-title">Your name*</h6> -->
+                            <input 
+                            type="password" 
                             class="sign-up-modal__input phone-input" 
-                            placeholder="Телефон" 
-                            name="phone" 
+                            placeholder="Confirm Password" 
+                            name="password" 
                             required
                             />
                         </div>
@@ -224,10 +238,10 @@
                                     <div class="input-group">
                                         <!-- <h6 class="input-title"></h6> -->
                                         <input 
-                                        type="text" 
+                                        type="tel" 
                                         class="sign-up-form__input" 
-                                        placeholder="Имя" 
-                                        name="name" 
+                                        placeholder="Phone number" 
+                                        name="phone" 
                                         required
                                         />
                                     </div>
@@ -235,20 +249,9 @@
                                     <div class="input-group">
                                         <!-- <h6 class="input-title">Your name*</h6> -->
                                         <input 
-                                        type="text" 
-                                        class="sign-up-form__input telegram-input" 
-                                        placeholder="Telegram" 
-                                        name="telegram" 
-                                        required
-                                        />
-                                    </div>
-                                    <!-- /.input-group -->
-                                    <div class="input-group">
-                                        <!-- <h6 class="input-title">Your name*</h6> -->
-                                        <input 
-                                        type="text" 
+                                        type="email" 
                                         class="sign-up-form__input" 
-                                        placeholder="Email" 
+                                        placeholder="E-mail" 
                                         name="email" 
                                         required
                                         />
@@ -257,10 +260,21 @@
                                     <div class="input-group">
                                         <!-- <h6 class="input-title">Your name*</h6> -->
                                         <input 
-                                        type="text" 
-                                        class="sign-up-form__input phone-input" 
-                                        placeholder="Телефон" 
-                                        name="phone" 
+                                        type="password" 
+                                        class="sign-up-form__input" 
+                                        placeholder="Password" 
+                                        name="password" 
+                                        required
+                                        />
+                                    </div>
+                                    <!-- /.input-group -->
+                                    <div class="input-group">
+                                        <!-- <h6 class="input-title">Your name*</h6> -->
+                                        <input 
+                                        type="password" 
+                                        class="sign-up-form__input" 
+                                        placeholder="Confirm password" 
+                                        name="password" 
                                         required
                                         />
                                     </div>

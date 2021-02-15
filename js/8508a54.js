@@ -118,14 +118,6 @@ $('.form, .sign-up-form__form').each(function(){
     $(this).validate({
         errorClass: "input-invalid",
         rules: {
-            name: {
-                required: true,
-                minlength: 2
-            },
-            telegram: {
-                required: true,
-                minlength: 2,
-            },
             email: {
                 required: true,
                 email: true,
@@ -136,14 +128,6 @@ $('.form, .sign-up-form__form').each(function(){
             },
         },
         messages: {
-            name: {
-                required: "Пожалуйста введите ваше имя",
-                minlength: jQuery.validator.format("Минимум 2 буквы"),
-            },
-            telegram: {
-                required: "Пожалуйста введите ваш ник в Telegram",
-                minlength: jQuery.validator.format("Минимум 2 буквы"),
-            },
             email: {
                 required: "Пожалуйста введите ваш Email",
                 email: "Email должен быть вида: name@domain.com",
