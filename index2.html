@@ -1,1009 +1,1140 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Unix Trade</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-        <link rel="apple-touch-icon" sizes="57x57" href="bundles/app/images/">
-        <link rel="apple-touch-icon" sizes="60x60" href="bundles/app/images/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="bundles/app/images/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="bundles/app/images/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="bundles/app/images/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="bundles/app/images/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="bundles/app/images/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="bundles/app/images/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="bundles/app/images/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="bundles/app/images/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="bundles/app/images/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="bundles/app/images/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="bundles/app/images/favicon-16x16.png">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-        <!-- BEGIN HEADER CSS -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/0e6b0c0.css" media="screen" />
-        <link rel="stylesheet" href="css/modal-sign-up.css">
-        <!-- END HEADER CSS -->
+<head>
+    <title>Unix Trade</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="bundles/app/images/">
+    <link rel="apple-touch-icon" sizes="60x60" href="bundles/app/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="bundles/app/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="bundles/app/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="bundles/app/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="bundles/app/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="bundles/app/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="bundles/app/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="bundles/app/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="bundles/app/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="bundles/app/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="bundles/app/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="bundles/app/images/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <!-- BEGIN HEADER CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/0e6b0c0.css" media="screen"/>
+    <link rel="stylesheet" href="css/modal-sign-up.css">
+    <!-- END HEADER CSS -->
 
-        <!-- BEGIN HEADER JS -->
-        <script src="js/b4e1687.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js" type="text/javascript"></script>
-        <!-- END HEADER JS -->
-    </head>
-    <body class="homepage">
-        
-        <div class="sign-up-modal">
-            <div class="sign-up-modal__overlay"></div>
-            <div class="sign-up-modal__inner">
-                <div class="close-btn-block">
-                    <img src="bundles/app/images/close-icon.png" alt="Close modal" class="sign-up-modal__close-btn">
-                </div>
-                <!-- /.close-btn-block -->
-                <div class="sign-up-modal__content">
-                    <p class="sign-up-modal__suptitle">Unix Trade</p>
-                    <h3 class="sign-up-modal__title">Пройти регистрацию</h3>
-                    <form action="send.php" method="POST" class=" form sign-up-modal__form">
-                        <div class="input-group">
-                            <!-- <h6 class="input-title"></h6> -->
-                            <input 
-                            type="tel" 
-                            class="sign-up-modal__input" 
-                            placeholder="Phone number" 
-                            name="phone" 
-                            required
-                            />
-                        </div>
-                        <!-- /.input-group -->
-                        <div class="input-group">
-                            <!-- <h6 class="input-title">Your name*</h6> -->
-                            <input 
-                            type="email" 
-                            class="sign-up-modal__input telegram-input" 
-                            placeholder="E-mail" 
-                            name="email" 
-                            required
-                            />
-                        </div>
-                        <!-- /.input-group -->
-                        <div class="input-group">
-                            <!-- <h6 class="input-title">Your name*</h6> -->
-                            <input 
-                            type="password" 
-                            class="sign-up-modal__input" 
-                            placeholder="Password" 
-                            name="password" 
-                            required
-                            />
-                        </div>
-                        <!-- /.input-group -->
-                        <div class="input-group">
-                            <!-- <h6 class="input-title">Your name*</h6> -->
-                            <input 
-                            type="password" 
-                            class="sign-up-modal__input phone-input" 
-                            placeholder="Confirm Password" 
-                            name="password" 
-                            required
-                            />
-                        </div>
-                        <!-- /.input-group -->
-                        <!-- <input type="checkbox" class="sign-up-modal__checkbox-input" id="modal-checkbox">
-                        <label class="sign-up-modal__checkbox" for="modal-checkbox">Agree to terms & conditions</label> -->
-                        <button class="sign-up-modal__btn" type="submit">Отправить заявку</button>
-                    </form>
-                    <!-- <span class="sign-up-modal__info">Уже зарегестрированы?
-                        <a class="sign-up-modal__info-link" href="#">Войти</a>
-                    </span> -->
-                </div>
-                <!-- /.sign-up-modal__content -->
+    <!-- BEGIN HEADER JS -->
+    <script src="js/b4e1687.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js"
+            type="text/javascript"></script>
+    <!-- END HEADER JS -->
+</head>
+<body class="homepage">
+
+    <div class="sign-up-modal">
+        <div class="sign-up-modal__overlay"></div>
+        <div class="sign-up-modal__inner">
+            <div class="close-btn-block">
+                <img src="bundles/app/images/close-icon.png" alt="Close modal" class="sign-up-modal__close-btn">
             </div>
-            <!-- /.sign-up-mpdal__inner -->
-        </div>
-        <!-- /.modal sign-up-modal -->
-
-        <div class="tel-confirm-modal">
-            <div class="tel-confirm-modal__overlay"></div>
-            <!-- /.tel-confirm-modal__overlay -->
-            <div class="tel-confirm-modal__inner">
-                <p class="tel-confirm-modal__text">Введите последние 4е цифры номера входящего звонка</p>
-                <form action="send.php" method="POST" class="tel-confirm-modal__form">
-                    <input type="text" class="tel-confirm-modal__input">
-                    <button class="tel-confirm-modal__button" type="submit">Подтвердить</button>
+            <!-- /.close-btn-block -->
+            <div class="sign-up-modal__content">
+                <p class="sign-up-modal__suptitle">Unix Trade</p>
+                <h3 class="sign-up-modal__title">Пройти регистрацию</h3>
+                <form action="send.php" method="POST" class=" form sign-up-modal__form">
+                    <div class="input-group">
+                        <!-- <h6 class="input-title"></h6> -->
+                        <input 
+                        type="tel" 
+                        class="sign-up-modal__input form__input phone-input" 
+                        placeholder="Phone number" 
+                        name="phone" 
+                        required
+                        />
+                    </div>
+                    <!-- /.input-group -->
+                    <div class="input-group">
+                        <!-- <h6 class="input-title">Your name*</h6> -->
+                        <input 
+                        type="email" 
+                        class="sign-up-modal__input" 
+                        placeholder="E-mail" 
+                        name="email" 
+                        required
+                        />
+                    </div>
+                    <!-- /.input-group -->
+                    <div class="input-group">
+                        <!-- <h6 class="input-title">Your name*</h6> -->
+                        <input 
+                        type="password" 
+                        class="sign-up-modal__input" 
+                        id="password__modal"
+                        placeholder="Password" 
+                        name="password" 
+                        required
+                        />
+                    </div>
+                    <!-- /.input-group -->
+                    <div class="input-group">
+                        <!-- <h6 class="input-title">Your name*</h6> -->
+                        <input 
+                        type="password" 
+                        class="sign-up-modal__input" 
+                        placeholder="Confirm Password" 
+                        name="password__confirmation__modal" 
+                        required
+                        />
+                    </div>
+                    <!-- /.input-group -->
+                    <!-- <input type="checkbox" class="sign-up-modal__checkbox-input" id="modal-checkbox">
+                    <label class="sign-up-modal__checkbox" for="modal-checkbox">Agree to terms & conditions</label> -->
+                    <button class="sign-up-modal__btn" type="submit">Отправить заявку</button>
                 </form>
+                <!-- <span class="sign-up-modal__info">Уже зарегестрированы?
+                    <a class="sign-up-modal__info-link" href="#">Войти</a>
+                </span> -->
             </div>
-            <!-- /.tel-confirm-modal__inner -->
+            <!-- /.sign-up-modal__content -->
         </div>
-        <!-- /.tel-confirm-modal -->
-        
-        <div class="mobile-menu">
-            <div class="mobile-menu__overlay"></div>
-            <div class="mobile-menu__inner">
-                <div class="mobile-menu__wrapper">
-                    <button class="mobile-menu__close-btn">
-                        <img src="bundles/app/images/close-icon.png" alt="Close menu" class="close-btn-icon">
-                    </button>
-                    <ul class="mobile-menu__list">
-                        <li class="mobile-menu__item">
-                            <a href="index.html" class="mobile-menu__link">Договор</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="#" class="mobile-menu__link mobile-menu__link--dropdown">О нас</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="#" class="mobile-menu__link mobile-menu__link--dropdown">Контакты
-                            </a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="#" class="mobile-menu__link mobile-menu__link--dropdown">Отказ от ответственности</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.mobile-menu__wrapper -->
-            </div>
-            <!-- /.mobile-menu__inner -->
+        <!-- /.sign-up-mpdal__inner -->
+    </div>
+    <!-- /.modal sign-up-modal -->
+
+<div class="tel-confirm-modal">
+    <div class="tel-confirm-modal__overlay"></div>
+    <!-- /.tel-confirm-modal__overlay -->
+    <div class="tel-confirm-modal__inner">
+        <p class="tel-confirm-modal__text">Введите последние 4е цифры номера входящего звонка</p>
+        <form action="send.php" method="POST" class="tel-confirm-modal__form">
+            <input type="text" class="tel-confirm-modal__input">
+            <button class="tel-confirm-modal__button" type="submit">Подтвердить</button>
+        </form>
+    </div>
+    <!-- /.tel-confirm-modal__inner -->
+</div>
+<!-- /.tel-confirm-modal -->
+
+<div class="mobile-menu">
+    <div class="mobile-menu__overlay"></div>
+    <div class="mobile-menu__inner">
+        <div class="mobile-menu__wrapper">
+            <button class="mobile-menu__close-btn">
+                <img src="bundles/app/images/close-icon.png" alt="Close menu" class="close-btn-icon">
+            </button>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="index.html" class="mobile-menu__link">Договор</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link mobile-menu__link--dropdown">О нас</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link mobile-menu__link--dropdown">Контакты
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link mobile-menu__link--dropdown">Отказ от ответственности</a>
+                </li>
+            </ul>
         </div>
-        <!-- /.mobile-menu -->
+        <!-- /.mobile-menu__wrapper -->
+    </div>
+    <!-- /.mobile-menu__inner -->
+</div>
+<!-- /.mobile-menu -->
 
-        <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <div class="header__logo logo">
-                        <a class="header__logo-link" href="/">
-                            <img class="header__logo-img" src="bundles/app/images/logo.png">
-                        </a>
-                        <span class="header__logo-text">e-Wallet Platform</span>
-                    </div>
-                    <nav class="header-menu">
-                        <ul class="header-menu__list">
-                            <li class="header-menu__item">
-                                <a href="#" class="header-menu__link">Договор</a>
-                            </li>
-                            <li class="header-menu__item">
-                                <a href="#" class="header-menu__link">О нас</a>
-                            </li>
-                            <li class="header-menu__item">
-                                <a href="#" class="header-menu__link">Контакты</a>
-                            </li>
-                            <li class="header-menu__item">
-                                <a href="#" class="header-menu__link">Отказ от ответственности</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <button class="header__btn reg-btn open-modal">Получите 100$</button>
-                    <button class="header__menu-btn">
-                        <span class="header__menu-line"></span>
-                    </button>
-                    <!-- /.header__menu-btn -->
-                </div>
-                <!-- /.header__inner -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo logo">
+                <a class="header__logo-link" href="/">
+                    <img class="header__logo-img" src="bundles/app/images/logo.png">
+                </a>
+                <span class="header__logo-text">e-Wallet Platform</span>
             </div>
-        </header>
+            <nav class="header-menu">
+                <ul class="header-menu__list">
+                    <li class="header-menu__item">
+                        <a href="#" class="header-menu__link">Договор</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#" class="header-menu__link">О нас</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#" class="header-menu__link">Контакты</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#" class="header-menu__link">Отказ от ответственности</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__btn reg-btn open-modal">Получите 100$</button>
+            <button class="header__menu-btn">
+                <span class="header__menu-line"></span>
+            </button>
+            <!-- /.header__menu-btn -->
+        </div>
+        <!-- /.header__inner -->
+    </div>
+</header>
 
-        <div class="mainwrap">
-            <div class="scrollancor"></div>
-            <style>
-                .header-user-menu-about-platform {
-                    display: block;
-                    padding: 15px 25px 15px 25px;
-                    cursor: pointer;
-                    line-height: 1.25rem;
-                    color: #767676 !important;
-                }
-            </style>
+<div class="mainwrap">
+    <div class="scrollancor"></div>
+    <style>
+        .header-user-menu-about-platform {
+            display: block;
+            padding: 15px 25px 15px 25px;
+            cursor: pointer;
+            line-height: 1.25rem;
+            color: #767676 !important;
+        }
+    </style>
 
-            <!-- PAGE CONTENT  -->
-            <div class="page-header">
-                <div class="page-header-bg">
-                    <div class="header-wave">
-                        <canvas id="wave"></canvas>
+    <!-- PAGE CONTENT  -->
+    <div class="page-header">
+        <div class="page-header-bg">
+            <div class="header-wave">
+                <canvas id="wave"></canvas>
+            </div>
+        </div>
+        <div class="container">
+            <div class="page-header__inner">
+                <div class="page-header__info">
+                    <div class="title-description-wrap">
+                        <h5>Управляй Своими Активами</h5>
                     </div>
-                </div>
-                <div class="container">
-                    <div class="page-header__inner">
-                        <div class="page-header__info">
-                            <div class="title-description-wrap">
-                                <h5>Управляй Своими Активами</h5>
+                    <div class="title-wrap">
+                        <h1>Начни свою торговлю на международных рынках криптовалют</h1>
+                    </div>
+                    <div class="page-header__cols">
+                        <div class="page-header-cols__inner">
+                            <div class="page-header-cols__item page-header-cols-item-simple">
+                                <img class="page-header-cols__img" src="bundles/app/images/tap-icon.png"/>
+                                <p class="page-header-cols__text">
+                                    <span>Операции в</span>
+                                    <span class="item-num">3</span>
+                                    <span>клика</span>
+                                </p>
                             </div>
-                            <div class="title-wrap">
-                                <h1>Начни свою торговлю на международных рынках криптовалют</h1>
+                            <div class="page-header-cols__item page-header-cols-item-fast">
+                                <img class="page-header-cols__img" src="bundles/app/images/percentage-icon.png"/>
+                                <p class="page-header-cols__text">
+                                    <span>Комисия</span>
+                                    <span class="item-num">1.2%</span>
+                                    <span>всего</span>
+                                </p>
                             </div>
-                            <div class="page-header__cols">
-                                <div class="page-header-cols__inner">
-                                    <div class="page-header-cols__item page-header-cols-item-simple">
-                                        <img class="page-header-cols__img" src="bundles/app/images/tap-icon.png" />
-                                        <p class="page-header-cols__text">
-                                            <span>Операции в</span>
-                                            <span class="item-num">3</span>
-                                            <span>клика</span>
-                                        </p>
-                                    </div>
-                                    <div class="page-header-cols__item page-header-cols-item-fast">
-                                        <img class="page-header-cols__img" src="bundles/app/images/percentage-icon.png" />
-                                        <p class="page-header-cols__text">
-                                            <span>Комисия</span>
-                                            <span class="item-num">1.2%</span>
-                                            <span>всего</span>
-                                        </p>
-                                    </div>
-                                    <div class="page-header-cols__item page-header-cols-item-popular">
-                                        <img class="page-header-cols__img" src="bundles/app/images/save-money-icon.png" />
-                                        <p class="page-header-cols__text">
-                                            <span>Накопление</span>
-                                            <span class="item-num">до 20%</span>
-                                            <span>годовых</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- /.page-header-cols__inner -->
+                            <div class="page-header-cols__item page-header-cols-item-popular">
+                                <img class="page-header-cols__img" src="bundles/app/images/save-money-icon.png"/>
+                                <p class="page-header-cols__text">
+                                    <span>Накопление</span>
+                                    <span class="item-num">до 20%</span>
+                                    <span>годовых</span>
+                                </p>
                             </div>
                         </div>
-                        <!-- /.page-header__text -->
-                        <!-- <div class="title-link-wrap animate-visible">
-                            <button id="reglive" class="btn btn_md btn_gradient open-modal">Начать сейчас
-                                <span class="hidden-arrow-right"></span>
-                            </button>
-                        </div> -->
-                        <div class="sign-up-form">
-                            <div class="sign-up-form__content">
-                                <h3 class="sign-up-form__title">Начни сейчас</h3>
-                                <form action="send.php" method="POST" class="sign-up-form__form" validate>
-                                    <div class="input-group">
-                                        <!-- <h6 class="input-title"></h6> -->
-                                        <input 
-                                        type="tel" 
-                                        class="sign-up-form__input phone-input" 
-                                        placeholder="Phone number" 
-                                        name="phone" 
+                        <!-- /.page-header-cols__inner -->
+                    </div>
+                </div>
+                <!-- /.page-header__text -->
+                <!-- <div class="title-link-wrap animate-visible">
+                    <button id="reglive" class="btn btn_md btn_gradient open-modal">Начать сейчас
+                        <span class="hidden-arrow-right"></span>
+                    </button>
+                </div> -->
+                <div class="form sign-up-form">
+                    <div class="sign-up-form__content">
+                        <h3 class="sign-up-form__title">Начни сейчас</h3>
+                        <form action="send.php" method="POST" class="sign-up-form__form" validate>
+                            <div class="input-group">
+                                <!-- <h6 class="input-title"></h6> -->
+                                <input
+                                        type="tel"
+                                        class="sign-up-form__input form__input phone-input"
+                                        placeholder="Phone number"
+                                        name="phone"
                                         required
-                                        />
-                                    </div>
-                                    <!-- /.input-group -->
-                                    <div class="input-group">
-                                        <!-- <h6 class="input-title">Your name*</h6> -->
-                                        <input 
-                                        type="email" 
-                                        class="sign-up-form__input" 
-                                        placeholder="E-mail" 
-                                        name="email" 
+                                />
+                            </div>
+                            <!-- /.input-group -->
+                            <div class="input-group">
+                                <!-- <h6 class="input-title">Your name*</h6> -->
+                                <input
+                                        type="email"
+                                        class="sign-up-form__input"
+                                        placeholder="E-mail"
+                                        name="email"
                                         required
-                                        />
-                                    </div>
-                                    <!-- /.input-group -->
-                                    <div class="input-group">
-                                        <!-- <h6 class="input-title">Your name*</h6> -->
-                                        <input 
-                                        type="password" 
-                                        class="sign-up-form__input" 
+                                />
+                            </div>
+                            <!-- /.input-group -->
+                            <div class="input-group">
+                                <!-- <h6 class="input-title">Your name*</h6> -->
+                                <input
+                                        type="password"
+                                        class="sign-up-form__input"
                                         id="password"
-                                        placeholder="Password" 
-                                        name="password" 
+                                        placeholder="Password"
+                                        name="password"
                                         required
-                                        />
-                                    </div>
-                                    <!-- /.input-group -->
-                                    <div class="input-group">
-                                        <!-- <h6 class="input-title">Your name*</h6> -->
-                                        <input 
-                                        type="password" 
-                                        class="sign-up-form__input" 
-                                        placeholder="Confirm password" 
-                                        name="password__confirmation" 
-                                        required
-                                        />
-                                    </div>
-                                    <!-- /.input-group -->
-                                    <!-- <input type="checkbox" class="sign-up-modal__checkbox-input" id="modal-checkbox">
-                                    <label class="sign-up-modal__checkbox" for="modal-checkbox">Agree to terms & conditions</label> -->
-                                    <button class="sign-up-form__btn" type="submit">Отправить заявку</button>
-                                </form>
-                                <!-- <span class="sign-up-modal__info">Уже зарегестрированы?
-                                    <a class="sign-up-modal__info-link" href="#">Войти</a>
-                                </span> -->
+                                />
                             </div>
-                            <!-- /.sign-up-modal__content -->
-                        </div>
-                        <!-- /.modal sign-up-modal -->
+                            <!-- /.input-group -->
+                            <div class="input-group">
+                                <!-- <h6 class="input-title">Your name*</h6> -->
+                                <input
+                                        type="password"
+                                        class="sign-up-form__input"
+                                        placeholder="Confirm password"
+                                        name="password__confirmation"
+                                        required
+                                />
+                            </div>
+                            <!-- /.input-group -->
+                            <!-- <input type="checkbox" class="sign-up-modal__checkbox-input" id="modal-checkbox">
+                            <label class="sign-up-modal__checkbox" for="modal-checkbox">Agree to terms & conditions</label> -->
+                            <button class="sign-up-form__btn" type="submit">Отправить заявку</button>
+                        </form>
+                        <!-- <span class="sign-up-modal__info">Уже зарегестрированы?
+                            <a class="sign-up-modal__info-link" href="#">Войти</a>
+                        </span> -->
                     </div>
-                    <!-- /.page-header__inner -->
-                    <br />
+                    <!-- /.sign-up-modal__content -->
+                </div>
+                <!-- /.modal sign-up-modal -->
+            </div>
+            <!-- /.page-header__inner -->
+            <br/>
+        </div>
+    </div>
+    <!-- /.page-header -->
+
+    <section class="know-first">
+        <div class="container">
+            <div class="known-first__title-block section__title-block">
+                <span class="section__suptitle known-first__suptitle animate-visible">First step</span>
+                <h3 class="known-first__title section__title">САМОЕ ВРЕМЯ НАЧАТЬ РАБОТУ В СИСТЕМЕ UNIX</h3>
+            </div>
+            <p class="known-first__text animate-visible">
+                В 2020 году общая капитализация криптовалютного рынка составила 244 миллиарда долларов и его объемы
+                продолжают расти. Идея децентрализованной платежной системы с сохранением анонимности участников
+                транзакций
+                получила абсолютную поддержку во всех странах мира, что обеспечило криптовалютам будущее. В 2018 году
+                состоялся официальный запуск системы Unix Finance как децентрализованного мультивалютного кошелька, в
+                который
+                в наше время претендует на роль флагмана в этой нише и уверенно идет к этому статусу и первый в мире,
+                реализовал возможность покупки за криптовалюту любую другую монету и наоборот.</p>
+            <p class="known-first__text animate-visible">
+                Поэтому вопрос "стоит ли заводить криптокошелек" уступил место другому вопросу - "какой криптокошелек
+                завести выгоднее".
+            </p>
+            <div class="known-first__title-block section__title-block known-first__title-block--second">
+                <span class="section__suptitle known-first__suptitle animate-visible">UNIX COIN</span>
+                <h3 class="known-first__title section__title">ПРОГРЕСС КАК ПАРАДИГМА</h3>
+            </div>
+            <p class="known-first__text animate-visible">
+                Unix Coin подкреплен смарт-контрактом и Defi технологией. Токен активно развивается и занимает все более
+                уверенные позиции за счет увеличения количества держателей UNIX и роста числа обменов с его
+                участием. </p>
+            <p class="known-first__text animate-visible">
+                <b>В БЛИЖАЙШЕЕ ВРЕМЯ ЗАПЛАНИРОВАН ЛИСТИНГ НА БИРЖУ UNISWAP</b>
+            </p>
+            <p class="known-first__text animate-visible">
+                В апреле-июне 2021 года с запуском собственной биржи UNIX токен компании станет еще более востребованным
+                и даст хороший рост Еще в начале сентября цена монеты была около 0.22 центов</p>
+            <p class="known-first__text animate-visible">
+                В личном кабинете пользователь видит - сколько средств находится в токене прямо сейчас</p>
+            <button class="reg-btn open-modal section__btn">Начни сейчас</button>
+        </div>
+    </section>
+
+    <section class="benefits-section">
+        <div class="container b-supercharge">
+            <div class="b-supercharge-title">
+                <div class="label-blue">UNIX TRADE</div>
+                <h2>ВОЗМОЖНОСТИ ЛИЧНОГО КАБИНЕТА UNIX</h2>
+                <p>С выходом приложения UNIX функционал личного кабинета будет полностью продублирован в мобильной
+                    версии, чтобы клиенты всегда имели доступ к свои финансовым возможностям.</p>
+            </div>
+            <div class="b-supercharge-carts">
+                <div>
+                    <div class="b-supercharge-cart reliable">
+                        <div class="b-supercharge-img">
+                            <img src="bundles/app/images/1.png"/>
+                        </div>
+                        <h4>Кошелек</h4>
+                        <p>Полная информация по кошелькам и криптовалютам в режиме онлайн</p>
+                    </div>
+                    <div class="b-supercharge-cart liquidity">
+                        <div class="b-supercharge-img">
+                            <img src="bundles/app/images/4.png"/>
+                        </div>
+                        <h4>Обмен</h4>
+                        <p>Мгновенный обмен в 3 клика с комиссией 1,2% за операцию</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="b-supercharge-cart spread">
+                        <div class="b-supercharge-img">
+                            <img src="bundles/app/images/3.png"/>
+                        </div>
+                        <h4>Реестр</h4>
+                        <p>Реестр транзакций, совершенных за всю историю аккаунта</p>
+                    </div>
+                    <div class="b-supercharge-cart name">
+                        <div class="b-supercharge-img">
+                            <img src="bundles/app/images/6.png"/>
+                        </div>
+                        <h4>Сведения</h4>
+                        <p>Подробные сведения по партнерам и доходности с реферальной программы</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="b-supercharge-cart demo">
+                        <div class="b-supercharge-img">
+                            <img src="bundles/app/images/5.png"/>
+                        </div>
+                        <h4>Статус</h4>
+                        <p>Актуальный статус Unix Coin и история инвестиций</p>
+                    </div>
+                    <div class="b-supercharge-cart security">
+                        <div class="b-supercharge-img">
+                            <img src="bundles/app/images/2.png"/>
+                        </div>
+                        <h4>Инструкция</h4>
+                        <p>Инструкция по смарт-контракту и капитализация продуктов</p>
+                    </div>
+                    <!-- <div class="b-supercharge-cart security">
+                        <div class="b-supercharge-img">
+                            <img src="bundles/app/images/7.png" />
+                        </div>
+                        <h4>Курс</h4>
+                        <p>Актуальные курсы криптовалют и DeFi монет</p>
+                    </div> -->
                 </div>
             </div>
-            <!-- /.page-header -->
-
-            <section class="know-first">
-                <div class="container">
-                    <div class="known-first__title-block section__title-block">
-                        <span class="section__suptitle known-first__suptitle animate-visible">First step</span>
-                        <h3 class="known-first__title section__title">САМОЕ ВРЕМЯ НАЧАТЬ РАБОТУ В СИСТЕМЕ UNIX</h3>
-                    </div>
-                    <p class="known-first__text animate-visible">
-                        В 2020 году общая капитализация криптовалютного рынка составила 244 миллиарда долларов и его объемы продолжают расти. Идея децентрализованной платежной системы с сохранением анонимности участников транзакций
-                        получила абсолютную поддержку во всех странах мира, что обеспечило криптовалютам будущее. В 2018 году состоялся официальный запуск системы Unix Finance как децентрализованного мультивалютного кошелька, в который
-                        в наше время претендует на роль флагмана в этой нише и уверенно идет к этому статусу и первый в мире, реализовал возможность покупки за криптовалюту любую другую монету и наоборот.</p>
-                    <p class="known-first__text animate-visible">
-                        Поэтому вопрос "стоит ли заводить криптокошелек" уступил место другому вопросу - "какой криптокошелек завести выгоднее".
-                    </p>
-                    <div class="known-first__title-block section__title-block known-first__title-block--second">
-                        <span class="section__suptitle known-first__suptitle animate-visible">UNIX COIN</span>
-                        <h3 class="known-first__title section__title">ПРОГРЕСС КАК ПАРАДИГМА</h3>
-                    </div>
-                    <p class="known-first__text animate-visible">
-                        Unix Coin подкреплен смарт-контрактом и Defi технологией. Токен активно развивается и занимает все более уверенные позиции за счет увеличения количества держателей UNIX и роста числа обменов с его участием. </p>
-                    <p class="known-first__text animate-visible">
-                        <b>В БЛИЖАЙШЕЕ ВРЕМЯ ЗАПЛАНИРОВАН ЛИСТИНГ НА БИРЖУ UNISWAP</b>
-                    </p>
-                    <p class="known-first__text animate-visible">
-                        В апреле-июне 2021 года с запуском собственной биржи UNIX токен компании станет еще более востребованным и даст хороший рост Еще в начале сентября цена монеты была около 0.22 центов</p>
-                    <p class="known-first__text animate-visible">
-                        В личном кабинете пользователь видит - сколько средств находится в токене прямо сейчас</p>
-                    <button class="reg-btn open-modal section__btn">Начни сейчас</button>
-                </div>
-            </section>
-
-            <section class="benefits-section">
-                <div class="container b-supercharge">
-                    <div class="b-supercharge-title">
-                        <div class="label-blue">UNIX TRADE</div>
-                        <h2>ВОЗМОЖНОСТИ ЛИЧНОГО КАБИНЕТА UNIX</h2>
-                        <p>С выходом приложения UNIX функционал личного кабинета будет полностью продублирован в мобильной версии, чтобы клиенты всегда имели доступ к свои финансовым возможностям.</p>
-                    </div>
-                    <div class="b-supercharge-carts">
-                        <div>
-                            <div class="b-supercharge-cart reliable">
-                                <div class="b-supercharge-img">
-                                    <img src="bundles/app/images/1.png" />
-                                </div>
-                                <h4>Кошелек</h4>
-                                <p>Полная информация по кошелькам и криптовалютам в режиме онлайн</p>
-                            </div>
-                            <div class="b-supercharge-cart liquidity">
-                                <div class="b-supercharge-img">
-                                    <img src="bundles/app/images/4.png" />
-                                </div>
-                                <h4>Обмен</h4>
-                                <p>Мгновенный обмен в 3 клика с комиссией 1,2% за операцию</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="b-supercharge-cart spread">
-                                <div class="b-supercharge-img">
-                                    <img src="bundles/app/images/3.png" />
-                                </div>
-                                <h4>Реестр</h4>
-                                <p>Реестр транзакций, совершенных за всю историю аккаунта</p>
-                            </div>
-                            <div class="b-supercharge-cart name">
-                                <div class="b-supercharge-img">
-                                    <img src="bundles/app/images/6.png" />
-                                </div>
-                                <h4>Сведения</h4>
-                                <p>Подробные сведения по партнерам и доходности с реферальной программы</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="b-supercharge-cart demo">
-                                <div class="b-supercharge-img">
-                                    <img src="bundles/app/images/5.png" />
-                                </div>
-                                <h4>Статус</h4>
-                                <p>Актуальный статус Unix Coin и история инвестиций</p>
-                            </div>
-                            <div class="b-supercharge-cart security">
-                                <div class="b-supercharge-img">
-                                    <img src="bundles/app/images/2.png" />
-                                </div>
-                                <h4>Инструкция</h4>
-                                <p>Инструкция по смарт-контракту и капитализация продуктов</p>
-                            </div>
-                            <!-- <div class="b-supercharge-cart security">
-                                <div class="b-supercharge-img">
-                                    <img src="bundles/app/images/7.png" />
-                                </div>
-                                <h4>Курс</h4>
-                                <p>Актуальные курсы криптовалют и DeFi монет</p>
-                            </div> -->
-                        </div>
-                    </div>
-                    <button class="reg-btn open-modal section__btn benefits__btn">Начни сейчас</button>
-                </div>
-            </section>
-
-            <section class="advantages">
-                <div class="container">
-                    <div class="advantages__title-block section__title-block">
-                        <span class="section__suptitle advantages__suptitle">Advantages</span>
-                        <h3>Чем система Unix выгоднее других?</h3>
-                    </div>
-                    <div class="advantages__inner">
-                        <ul class="advantages__list">
-                            <li class="advantages__item">Мы являемся руководителем наших денег и сами управляем ими</li>
-                            <li class="advantages__item">Нет ограничений, в которые зачастую загоняют клиентов</li>
-                            <li class="advantages__item">Нет уязвимостей в системе защиты вкладов</li>
-                            <li class="advantages__item">Самая низкая комиссия по транзакциям</li>
-                            <li class="advantages__item">Наши деньги, находятся только у нас</li>
-                            <li class="advantages__item">Высокая диверсификация рисков</li>
-                            <li class="advantages__item">Получение дивидентов за счет хранения</li>
-                            <li class="advantages__item">Собственный, динамичный DeFi Token Unix</li>
-                            <li class="advantages__item">Возможность получения прибыли до 20% в месяц пассивно</li>
-                            <li class="advantages__item">Нет человеческого фактора в роли директории, администраторов или руководителей</li>
-                        </ul>
-                        <div class="advantages__img-block">
-                            <img class="advantages__img" src="bundles/app/images/advantages-dollar.png" alt="Dollar">
-                        </div>
-                        <!-- /.advantages__img-block -->
-                    </div>
-                    <!-- /.advantages__inner -->
-                    <p class="advantages__text">
-                        В системе Unix все работает на основании неизменяемого смарт-контракта (децентрализации). Смарт-контракт - это компьютерная программа, в которой после ее запуска нет возможности ее изменить, удалить, скорректировать.
-                    </p>
-                    <button class="reg-btn open-modal section__btn advantages__btn">Начни сейчас</button>
-                </div>
-                <!-- /.container -->
-            </section>
-
-            <!-- <section class="container homepage-news">
-                <div class="homepage-news-wrap">
-                    <h2 class="homepage-news-tittle animate-visible">Чем система Unix выгоднее других?</h2>
-
-                    <ul class="ullist">
-                        <li>Высокая диверсификация рисков</li>
-                        <br />
-                        <li>Наши деньги, находятся только у нас</li>
-                        <br />
-                        <li>Мы являемся руководителем наших денег и сами управляем ими</li>
-                        <br />
-                        <li>Нет уязвимостей в системе защиты вкладов</li>
-                        <br />
-                        <li>Самая низкая комиссия по транзакциям</li>
-                        <br />
-                        <li>Получение дивидентов за счет хранения</li>
-                        <br />
-                        <li>Собственный, динамичный DeFi Token Unix</li>
-                        <br />
-                        <li>Возможность получения прибыли до 20% в месяц пассивно</li>
-                        <br />
-                        <li>Нет ограничений, в которые зачастую загоняют клиентов</li>
-                        <br />
-                        <li>Нет человеческого фактора в роли директории, администраторов или руководителей</li>
-                        <br />
-                    </ul>
-                    <p class="homepage-news-text animate-visible">
-                        В системе Unix все работает на основании неизменяемого смарт-контракта (децентрализации). Смарт-контракт - это компьютерная программа, в которой после ее запуска нет возможности ее изменить, удалить, скорректировать.
-                    </p>
-                    <button class="reg-btn open-modal section__btn homepage-news__btn">Начни сейчас</button>
-                </div>
-            </section> -->
-
-            <section class="earnings">
-                <div class="container">
-                    <div class="earnings__title-block section__title-block">
-                        <span class="section__suptitle earnings__suptitle animate-visible">Earnings</span>
-                        <h3 class="earnings__title section__title">Как мне заработать с Unix?</h3>
-                    </div>
-                    <div class="earnings-accordeon">
-                        <div class="earnings-accordeon__item">
-                            <p class="earnings-accordeon__question">Заработок за счет</p>
-                            <p class="earnings-accordeon__answer">партнерской программы на постоянной основе, а не единоразово.</p>
-                        </div>
-                        <div class="earnings-accordeon__item">
-                            <p class="earnings-accordeon__question">Заработок за счет</p>
-                            <p class="earnings-accordeon__answer">накапливания и роста курса самой монеты Unix Coin. Пример - в начале сентября монета Unix стоила около 0.22 доллара.</p>
-                        </div>
-                        <div class="earnings-accordeon__item">
-                            <p class="earnings-accordeon__question">Уникальная <br> возможность</p>
-                            <p class="earnings-accordeon__answer">заработок на изменении курсов валют. Так как обмен валют на кошельке Unix происходит мгновенно и буквально в 3 клика, вы сможете зарабатывать на спекуляциях.</p>
-                        </div>
-                        <div class="earnings-accordeon__item">
-                            <p class="earnings-accordeon__question">Даже без <br> подключения</p>
-                            <p class="earnings-accordeon__answer">маркетинговых программ клиент получает деньги, просто храня свои средства в криптокошельке Unix и используя его, за это пользователь может получить от 12 до 20% годовых.</p>
-                        </div>
-                        <div class="earnings-accordeon__item">
-                            <p class="earnings-accordeon__question">Возможность <br> получения</p>
-                            <p class="earnings-accordeon__answer">от 4 до 8% в месяц за счет стейкинга (добычи) монеты Unix, предоставляя системе ликвидность (деньги) в монетах LINK, WBTC, UNI мы на выходе получаем DeFi Unix Coin (цифровая акция самой системы)</p>
-                        </div>
-                        <div class="earnings-accordeon__item">
-                            <p class="earnings-accordeon__question">Клиент может стать <br> участником</p>
-                            <p class="earnings-accordeon__answer">программы Unix Coin (торговли) и предоставить свои активы в управление торговым роботом Unix. Это торговая программа идет 100 календарных дней с ежемесячной доходностью до 18%. Есть полная
-                            сертификация, налогоплательщик и прохождение полного ежегодного аудита и возможность личной проверки этого на государственном реестре Китая. Полная ежемесячная отчетность со всеми четкими цифрами,
-                            графиками, полной статистикой.</p>
-                        </div>
-                    </div>
-                    <!-- /.earnings-accordeon -->
-                    <button class="reg-btn open-modal section__btn homepage-news__btn">Начни сейчас</button>
-                </div>
-                <!-- /.container -->
-            </section>
-            
-            <section class="currency">
-                <div class="container">
-                    <div class="advantages__title-block section__title-block">
-                        <span class="section__suptitle advantages__suptitle animate-visible">Currency</span>
-                        <h3 class="animate-visible">ОБМЕН ВАЛЮТ С UNIX ПРОЩЕ, БЫСТРЕЕ, УДОБНЕЕ</h3>
-                    </div>
-                    <div class="advantages__inner">
-                        <div class="advantages__img-block currency__img-block">
-                            <img class="advantages__img" src="bundles/app/images/advantages-dollar.png" alt="Dollar">
-                        </div>
-                        <!-- /.advantages__img-block -->
-                        <ul class="advantages__list">
-                            <li class="advantages__item">Свободный обмен валют в личном кабинете</li>
-                            <li class="advantages__item">Для совершения обмена нужно не более трех кликов</li>
-                            <li class="advantages__item">Никаких ограничений на объемы и число операций</li>
-                            <li class="advantages__item">Комиссия сервиса составляет всего 1,2%</li>
-                            <li class="advantages__item">Предоставление актуальной информации по курсам валют</li>
-                            <li class="advantages__item">Полная отчетность по транзакциям в архиве</li>
-                        </ul>
-                    </div>
-                    <!-- /.advantages__inner -->
-                    <p class="advantages__text">
-                        Уже в январе 2021 с выходом мобильного приложения Unix все это можно будет делать на&nbsp;смартфоне.
-                    </p>
-                    <button class="reg-btn open-modal section__btn advantages__btn">Начни сейчас</button>
-                </div>
-                <!-- /.container -->
-            </section>
-
-            <!-- <div class="download-platform">
-                <div class="container">
-                    <h2 class="download-platform-title animate-visible">
-                        ОБМЕН ВАЛЮТ С UNIX<br />
-                        ПРОЩЕ, БЫСТРЕЕ, УДОБНЕЕ
-                    </h2>
-                    <ul class="ullist">
-                        <li>Свободный обмен валют в личном кабинете</li>
-                        <br />
-                        <li>Для совершения обмена нужно не более трех кликов</li>
-                        <br />
-                        <li>Никаких ограничений на объемы и число операций</li>
-                        <br />
-                        <li>Комиссия сервиса составляет всего 1,2%</li>
-                        <br />
-                        <li>Предоставление актуальной информации по курсам валют</li>
-                        <br />
-                        <li>Полная отчетность по транзакциям в архиве</li>
-                        <br />
-                    </ul>
-                    <p class="homepage-news-text animate-visible">Уже в январе 2021 с выходом мобильного приложения Unix все это можно будет делать на смартфоне.</p>
-                </div>
-            </div> -->
-            <section class="start-with">
-                <div class="start-with-bg"></div>
-                <div class="container">
-                    <div class="label-blue">Unix Trade</div>
-                    <h2>РЕФЕРАЛЬНАЯ ПРОГРАММА UNIX - ЗАРАБАТЫВАЙТЕ В&nbsp;КОМАНДЕ</h2>
-                    <div class="referal">
-                        <div class="percents">
-                            <div class="percblock"><span class="percnum">1</span><span class="percline percline1"></span><span class="percnum">10%</span></div>
-                            <div class="percblock"><span class="percnum">2</span><span class="percline percline2"></span><span class="percnum">7%</span></div>
-                            <div class="percblock"><span class="percnum">3</span><span class="percline percline3"></span><span class="percnum">5%</span></div>
-                            <div class="percblock"><span class="percnum">4</span><span class="percline percline4"></span><span class="percnum">3%</span></div>
-                            <div class="percblock"><span class="percnum">5</span><span class="percline percline5"></span><span class="percnum">1%</span></div>
-                        </div>
-                        <div class="reftext">
-                            <p class="p1">
-                                Партнерская программа зависит только от наших инвестиций и от тех продуктов которыми мы пользуемся. Если мы используем любые продукты, кроме торговли, мы имеем 3 линии в глубину и до 12% с первой линии. Если
-                                же у нас есть инвестиция в продукт торговли от $200, у нас открывается возможность пользоваться другой партнерской системой.
-                            </p>
-                            <p class="p2">
-                                Есть система личных рангов, которая зависит от суммы инвестиций в продукт торговли от 200, 1000, 10000, 20000, 50000, 100000, 500000, тем самым нам открывается партнерская система от 5 до 15 линий в глубину и
-                                от 10 до 30% от дохода наших лично приглашенных партнеров. Пример, мы пригласили партнера на 10000 евро, это значит что с лично приглашенных партнеров, мы будем получать 14% от дохода с инвестиции нашего
-                                партнера на постоянной основе, а это 280 евро каждый месяц.
-                            </p>
-                            <p class="p3">Мы получаем процент от дохода не только того партнера, которого мы пригласили, но также от приглашенных партнером участников, вплоть до последней. линии.</p>
-                        </div>
-                    </div>
-                    <button class="reg-btn open-modal section__btn homepage-news__btn">Начни сейчас</button>
-                </div>
-            </section>
-            <!-- <div id="form" class="border-gradient-big">Управляй Своми Активами</div> -->
-            <!-- END PAGE CONTENT  -->
-            <!-- <div class="form-section start-with">
-                <div class="container">
-                    <div class="label-blue animate-visible">Unix Trade</div>
-                    <h2 class="animate-visible" style="color: #050505;">Пройти регистрацию</h2>
-                    <form action="send.php" class="form" method="POST">
-                        <input type="text" placeholder="Фамилия" name="fam" required="" />
-                        <input type="text" placeholder="Имя" name="name" required="" />
-                        <input type="email" placeholder="Email" name="email" required="" />
-                        <input type="tel" placeholder="Телефон" name="phone" required="" class="phone_mask" />
-                        <button class="btn btn_md btn_gradient">Отправить заявку</button>
-                    </form>
-                </div>
-            </div> -->
-
-            <section class="reviews">
-                <div class="container">
-                    <div class="reviews__title-block section__title-block">
-                        <span class="section__suptitle reviews__suptitle animate-visible">Reviews</span>
-                        <h4 class="reviews__title section__title">Отзывы о Unix Trade</h4>
-                    </div>
-                    <!-- /.reviews__title-block section__title-block -->
-                    <div class="reviews__inner">
-                        <div class="reviews__item">
-                            <div class="reviews__content">
-                                <div class="reviews__rating">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                </div>
-                                <span class="reviews__author">Petr Sidorov</span>
-                                <button class="reviews__item-btn">Ещё</button>
-                                <p class="reviews__text">Был приятно удивлен сервисом. На фоне других выделяется и прост в обращении. Могу и буду рекомендовать.
-                                </p>
-                            </div>
-                            <!-- /.reviews__content -->
-                        </div>
-                        <!-- /.reviews__item -->
-                        <div class="reviews__item">
-                            <div class="reviews__content">
-                                <div class="reviews__rating">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                </div>
-                                <span class="reviews__author">Evgeny Ivanov</span>
-                                <button class="reviews__item-btn">Ещё</button>
-                                <p class="reviews__text">Попробовал узнать больше о криптовалюте! Очень интересно стало на фоне всеобщего хайпа! Попал на ваш сервис. Спасибо за оперативную работу. Сразу видно, когда к клиенту хорошо относятся. Платформа удобная и приятная. Замечаний нет!
-                                </p>
-                            </div>
-                            <!-- /.reviews__content -->
-                        </div>
-                        <!-- /.reviews__item -->
-                        <div class="reviews__item">
-                            <div class="reviews__content">
-                                <div class="reviews__rating">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                </div>
-                                <span class="reviews__author">Anna Frank</span>
-                                <button class="reviews__item-btn">Ещё</button>
-                                <p class="reviews__text">Нам с мужем очень понравилось эта платформа. Мало того, что сразу твой кошелёк полнеет, так еще и много удобного. Переводили тоже. Муж сказал, что комиссии меньше нет нигде!
-                                </p>
-                            </div>
-                            <!-- /.reviews__content -->
-                        </div>
-                        <!-- /.reviews__item -->
-                        <div class="reviews__item">
-                            <div class="reviews__content">
-                                <div class="reviews__rating">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                </div>
-                                <span class="reviews__author">Dmitry Svirnov</span>
-                                <button class="reviews__item-btn">Ещё</button>
-                                <p class="reviews__text">Ну стало мне интересно, что это такое- заглянул, проверил! Понравилось. Быстро и удобно. Можно вложить в коин. Сейчас это интересно всем, думаю.
-                                </p>
-                            </div>
-                            <!-- /.reviews__content -->
-                        </div>
-                        <!-- /.reviews__item -->
-                        <div class="reviews__item">
-                            <div class="reviews__content">
-                                <div class="reviews__rating">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                </div>
-                                <span class="reviews__author">Semen Frolov</span>
-                                <button class="reviews__item-btn">Ещё</button>
-                                <p class="reviews__text">Спасибо за платформу! Я довольна. Можно хранить и менять и переводить. Серьезно! Оказывается, все намного проще чем казалось. Теперь с гордостью владею и пользуюсь сервисом. А депозит до 20% говорит о многом, как я считаю. Удобно все сделано в меню! Мне немного помогли разобраться, но при желании и самому это сделать можно очень быстро! В нынешнем цифровом мире такой вид услуг просто the must!!!
-                                </p>
-                            </div>
-                            <!-- /.reviews__content -->
-                        </div>
-                        <!-- /.reviews__item -->
-                        <div class="reviews__item">
-                            <div class="reviews__content">
-                                <div class="reviews__rating">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                    <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
-                                </div>
-                                <span class="reviews__author">Semen Frolov</span>
-                                <button class="reviews__item-btn">Ещё</button>
-                                <p class="reviews__text">Всем привет. Попробовал- неплохо. Есть замечания, но я очень люблю все критиковать. Сервис достойный и удобный. Не развод
-                                </p>
-                            </div>
-                            <!-- /.reviews__content -->
-                        </div>
-                        <!-- /.reviews__item -->
-                    </div>
-                    <!-- /.reviews__inner -->
-                    <button class="reg-btn open-modal section__btn reviews__btn">Начни сейчас</button>
-                </div>
-                <!-- /.container -->
-            </section>
-
-            <section class="team">
-                <div class="container">
-                    <div class="team__title-block section__title-block">
-                        <span class="section__suptitle team__suptitle animate-visible">Team</span>
-                        <h4 class="team__title section__title">Наша команда</h4>
-                    </div>
-                    <!-- /.team__title-block section__title-block -->
-                    <div class="team__inner">
-                        <div class="team__item">
-                            <img src="bundles/app/images/team-img-1.jpeg" alt="" class="team__img">
-                            <div class="team__info">
-                                <span class="team__name">Вася Иванов</span>
-                                <span class="team__job">Руководитель</span>
-                            </div>
-                        </div>
-                        <div class="team__item">
-                            <img src="bundles/app/images/team-img-3.jpeg" alt="" class="team__img">
-                            <div class="team__info">
-                                <span class="team__name">Петя Сидоров</span>
-                                <span class="team__job">Главный разраб</span>
-                            </div>
-                        </div>
-                        <div class="team__item">
-                            <img src="bundles/app/images/team-img-2.jpeg" alt="" class="team__img">
-                            <div class="team__info">
-                                <span class="team__name">Женя Петрова</span>
-                                <span class="team__job">Главный HR</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.team__inner -->
-                </div>
-                <!-- /.container -->
-            </section>
-
-            <section class="partners">
-                <div class="container">
-                    <div class="partners__title-block section__title-block">
-                        <span class="section__suptitle partners__suptitle animate-visible">Partners</span>
-                        <h4 class="partners__title section__title">Наши партнеры</h4>
-                    </div>
-                    <!-- /.partners__title-block section__title-block -->
-                    <div class="partners__inner">
-                        <div class="partners__img-block">
-                            <img src="bundles/app/images/lufthansa.png" alt="" class="partners__img">
-                        </div>
-                        <div class="partners__img-block">
-                            <img src="bundles/app/images/coinbase.png" alt="" class="partners__img">
-                        </div>
-                        <div class="partners__img-block">
-                            <img src="bundles/app/images/coindesk.png" alt="" class="partners__img">
-                        </div>
-                        <div class="partners__img-block">
-                            <img src="bundles/app/images/pci-ssc.png" alt="" class="partners__img">
-                        </div>
-                        <div class="partners__img-block">
-                            <img src="bundles/app/images/forklog.png" alt="" class="partners__img">
-                        </div>
-                    </div>
-                    <!-- /.partners__inner -->
-                    <button class="reg-btn open-modal section__btn partners__btn">Начни сейчас</button>
-                </div>
-                <!-- /.container -->
-            </section>
-
-            <footer>
-                <div class="container">
-                    <div class="footer-row">
-                        <div class="footer-links">
-                            <h6>Общее</h6>
-                            <a href="mailto:support@UnixTrade.trade">Поддержка</a>
-                            <a href="https://unix.finance">Про Unix.Finance</a>
-                        </div>
-                        <div class="footer-links footer-contacts">
-                            <h6>Подписаться на обновления</h6>
-                            <fieldset>
-                                <form id="subscribe-email" action="/subscribeAjax" method="post" novalidate="novalidate" autocomplete="off">
-                                    <input id="subscribe-inp" class="footer-mail" name="email" placeholder="E-mail address..." />
-                                    <input type="hidden" id="zc_gad" name="zc_gad" value="" />
-                                    <button id="subscribe-btn" type="submit" class="btn btn_blue">Отправить</button>
-                                </form>
-                            </fieldset>
-                            <div class="footer-social">
-                                <ul>
-                                    <li><a href="https://www.facebook.com/UnixTrade.trade/" target="_blank" class="footer-social-icon facebook"></a></li>
-                                    <li><a href="https://www.instagram.com/UnixTrade.trade" target="_blank" class="footer-social-icon instagram"></a></li>
-                                    <li><a href="https://t.me/UnixTradeTRADE" target="_blank" class="footer-social-icon telegram"></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCe9ebR_d0QwxcvfB3inkfKQ" target="_blank" class="footer-social-icon youtube"></a></li>
-                                    <li><a href="https://invite.viber.com/?g2=AQAhVxAevI4if0p7f99ZwU208BYzHHwJ4XrquMRpsG7WVPpmytopkVpE7H%2BxZddP" target="_blank" class="footer-social-icon viber"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="footer-copy">
-                            <p>
-                                &copy;&nbsp;© 2016-2021 Все права защищены
-                                <span class="footer-terms-link"> </span>
-                            </p>
-                            <a href="https://itt.team/" title="Розробка сайтів, торгових платформ" class="itt-logo">
-                                <div class="itt-dots">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <h4>
-                                    integrity
-                                    <br />
-                                    trading
-                                    <br />
-                                    technology
-                                </h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-texts">
-                    <div class="container">
-                        <div>
-                            <h1>Disclaimer</h1>
-                            <p>
-                                Отказ от ответственности за доходы и данные о доходах, сделанные c dizzyale.com (коллективно с «этим Веб-сайтом» ) используются только в качестве наглядного примера вашего потенциала заработка. Успех тех, кто
-                                находится в отзывах и других примерах, является исключительным результатом и, следовательно, не является гарантией того, что вы или другие люди добьетесь таких же результатов. Индивидуальные результаты могут
-                                отличаться и полностью зависят от вашего использования dizzyale.com . Этот сайт не несет ответственности за ваши действия. Вы несете полную ответственность за свои действия и решения при использовании
-                                продуктов и услуг, поэтому вы должны всегда проявлять осторожность и должную осмотрительность. Вы соглашаетесь с тем, что данный Веб-сайт не несет никакой ответственности за результаты использования наших
-                                продуктов и услуг. Ознакомьтесь с нашими Правилами и Условиями для полного отказа от ответственности и других ограничений. Этот веб-сайт может получить компенсацию за продукты и услуги, которые рекомендует
-                                вам. Если вы не хотите, чтобы этот сайт получил вознаграждение за рекомендации, мы рекомендуем вам поискать в Интернете аналогичный продукт по несвязанной ссылке. ©2021
-                            </p>
-                            <p>
-                                Не все товары или услуги будут доступны для всех инвесторов: они предназначены только клиентам в тех странах и регионах, где это позволяет законодательство и положения. Торговля валютами и драгоценными
-                                металлами может быть ограничена в различных странах; резиденты этих стран и / или определенные категории инвесторов могут не иметь права на определенные товары или услуги, о которых идет речь в этом сайте.
-                                Информация, содержащаяся в этом документе, не предназначена для распространения или использования любым лицом или юридическим лицом в любой юрисдикции или стране, где такое распространение или использование
-                                противоречит законодательству или нормативно-правовым актам. Этот сайт не предназначен для использования любым лицом в любой юрисдикции, когда публикация или доступность наших услуг запрещена из-за
-                                национальности, места жительства этого лица или другое. Лица, имеющие эти ограничения не должны использовать этот веб-сайт.
-                            </p>
-                            <p>
-                                Общие риски в торговле валютами и банковскими металлами на условиях маржинальной торговли: Торговля валютами и банковскими металлами на условиях маржинальной торговли (то есть с использованием плеча) подходит
-                                не для всех. Инвестирование в такие инструменты предполагает высокую степень риска потери. Прежде чем торговать маржой, вы должны знать о рисках, связанных с колебанием стоимости таких инструментов, что может
-                                привести колебания стоимости вашей инвестиции. Любой тип рыночной или торговой спекуляции, который может принести необычно высокую доходность инвестиций, склонен к чрезвычайно высоких рисков. Большие потери
-                                могут понести в течение сравнительно короткого периода за неблагоприятных рыночных изменения или рост позиций. Прежде чем принять решение о торговле валютой и банковскими металлами на условиях маржинальной
-                                торговли, следует внимательно рассмотреть свои инвестиционные цели, уровень опыта и аппетит к риску. Вы должны торговать только той частью собственных активов, которой вы распоряжаетесь, и не можете позволить
-                                себе потерять целиком: только ваши избыточные средства должны быть подвержены риску, а если у вас нет таких излишков, вы должны обязательно избегать участия в маржинальной торговле. В случае сомнений
-                                относительно рисков, связанных с валютным обмена, торговли банковскими металлами на условиях маржинальной торговли, вы должны проконсультироваться с любым независимым финансовым консультантом и спросить любую
-                                необходимую информацию.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <button class="reg-btn open-modal section__btn benefits__btn">Начни сейчас</button>
         </div>
-        <div class="sidebar-menu">
-            <ul>
-                <li><a href="/trading">Обменник</a></li>
-                <li><a href="/online-charts">Аналитика</a></li>
-                <li><a href="/platform">Платформа</a></li>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__title-block section__title-block">
+                <span class="section__suptitle advantages__suptitle">Advantages</span>
+                <h3>Чем система Unix выгоднее других?</h3>
+            </div>
+            <div class="advantages__inner">
+                <ul class="advantages__list">
+                    <li class="advantages__item">Мы являемся руководителем наших денег и сами управляем ими</li>
+                    <li class="advantages__item">Нет ограничений, в которые зачастую загоняют клиентов</li>
+                    <li class="advantages__item">Нет уязвимостей в системе защиты вкладов</li>
+                    <li class="advantages__item">Самая низкая комиссия по транзакциям</li>
+                    <li class="advantages__item">Наши деньги, находятся только у нас</li>
+                    <li class="advantages__item">Высокая диверсификация рисков</li>
+                    <li class="advantages__item">Получение дивидентов за счет хранения</li>
+                    <li class="advantages__item">Собственный, динамичный DeFi Token Unix</li>
+                    <li class="advantages__item">Возможность получения прибыли до 20% в месяц пассивно</li>
+                    <li class="advantages__item">Нет человеческого фактора в роли директории, администраторов или
+                        руководителей
+                    </li>
+                </ul>
+                <div class="advantages__img-block">
+                    <img class="advantages__img" src="bundles/app/images/advantages-dollar.png" alt="Dollar">
+                </div>
+                <!-- /.advantages__img-block -->
+            </div>
+            <!-- /.advantages__inner -->
+            <p class="advantages__text">
+                В системе Unix все работает на основании неизменяемого смарт-контракта (децентрализации). Смарт-контракт
+                - это компьютерная программа, в которой после ее запуска нет возможности ее изменить, удалить,
+                скорректировать.
+            </p>
+            <button class="reg-btn open-modal section__btn advantages__btn">Начни сейчас</button>
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- <section class="container homepage-news">
+        <div class="homepage-news-wrap">
+            <h2 class="homepage-news-tittle animate-visible">Чем система Unix выгоднее других?</h2>
+
+            <ul class="ullist">
+                <li>Высокая диверсификация рисков</li>
+                <br />
+                <li>Наши деньги, находятся только у нас</li>
+                <br />
+                <li>Мы являемся руководителем наших денег и сами управляем ими</li>
+                <br />
+                <li>Нет уязвимостей в системе защиты вкладов</li>
+                <br />
+                <li>Самая низкая комиссия по транзакциям</li>
+                <br />
+                <li>Получение дивидентов за счет хранения</li>
+                <br />
+                <li>Собственный, динамичный DeFi Token Unix</li>
+                <br />
+                <li>Возможность получения прибыли до 20% в месяц пассивно</li>
+                <br />
+                <li>Нет ограничений, в которые зачастую загоняют клиентов</li>
+                <br />
+                <li>Нет человеческого фактора в роли директории, администраторов или руководителей</li>
+                <br />
             </ul>
-            <ul>
-                <li><a href="/register/live">Відкрити рахунок</a></li>
-                <li><a href="https://demo-forex.UnixTrade.trade/cabinet/demo?lang=uk">Демо</a></li>
+            <p class="homepage-news-text animate-visible">
+                В системе Unix все работает на основании неизменяемого смарт-контракта (децентрализации). Смарт-контракт - это компьютерная программа, в которой после ее запуска нет возможности ее изменить, удалить, скорректировать.
+            </p>
+            <button class="reg-btn open-modal section__btn homepage-news__btn">Начни сейчас</button>
+        </div>
+    </section> -->
+
+    <section class="earnings">
+        <div class="container">
+            <div class="earnings__title-block section__title-block">
+                <span class="section__suptitle earnings__suptitle animate-visible">Earnings</span>
+                <h3 class="earnings__title section__title">Как мне заработать с Unix?</h3>
+            </div>
+            <div class="earnings-accordeon">
+                <div class="earnings-accordeon__item">
+                    <p class="earnings-accordeon__question">Заработок за счет</p>
+                    <p class="earnings-accordeon__answer">партнерской программы на постоянной основе, а не
+                        единоразово.</p>
+                </div>
+                <div class="earnings-accordeon__item">
+                    <p class="earnings-accordeon__question">Заработок за счет</p>
+                    <p class="earnings-accordeon__answer">накапливания и роста курса самой монеты Unix Coin. Пример - в
+                        начале сентября монета Unix стоила около 0.22 доллара.</p>
+                </div>
+                <div class="earnings-accordeon__item">
+                    <p class="earnings-accordeon__question">Уникальная <br> возможность</p>
+                    <p class="earnings-accordeon__answer">заработок на изменении курсов валют. Так как обмен валют на
+                        кошельке Unix происходит мгновенно и буквально в 3 клика, вы сможете зарабатывать на
+                        спекуляциях.</p>
+                </div>
+                <div class="earnings-accordeon__item">
+                    <p class="earnings-accordeon__question">Даже без <br> подключения</p>
+                    <p class="earnings-accordeon__answer">маркетинговых программ клиент получает деньги, просто храня
+                        свои средства в криптокошельке Unix и используя его, за это пользователь может получить от 12 до
+                        20% годовых.</p>
+                </div>
+                <div class="earnings-accordeon__item">
+                    <p class="earnings-accordeon__question">Возможность <br> получения</p>
+                    <p class="earnings-accordeon__answer">от 4 до 8% в месяц за счет стейкинга (добычи) монеты Unix,
+                        предоставляя системе ликвидность (деньги) в монетах LINK, WBTC, UNI мы на выходе получаем DeFi
+                        Unix Coin (цифровая акция самой системы)</p>
+                </div>
+                <div class="earnings-accordeon__item">
+                    <p class="earnings-accordeon__question">Клиент может стать <br> участником</p>
+                    <p class="earnings-accordeon__answer">программы Unix Coin (торговли) и предоставить свои активы в
+                        управление торговым роботом Unix. Это торговая программа идет 100 календарных дней с ежемесячной
+                        доходностью до 18%. Есть полная
+                        сертификация, налогоплательщик и прохождение полного ежегодного аудита и возможность личной
+                        проверки этого на государственном реестре Китая. Полная ежемесячная отчетность со всеми четкими
+                        цифрами,
+                        графиками, полной статистикой.</p>
+                </div>
+            </div>
+            <!-- /.earnings-accordeon -->
+            <button class="reg-btn open-modal section__btn homepage-news__btn">Начни сейчас</button>
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section class="currency">
+        <div class="container">
+            <div class="advantages__title-block section__title-block">
+                <span class="section__suptitle advantages__suptitle animate-visible">Currency</span>
+                <h3 class="animate-visible">ОБМЕН ВАЛЮТ С UNIX ПРОЩЕ, БЫСТРЕЕ, УДОБНЕЕ</h3>
+            </div>
+            <div class="advantages__inner">
+                <div class="advantages__img-block currency__img-block">
+                    <img class="advantages__img" src="bundles/app/images/advantages-dollar.png" alt="Dollar">
+                </div>
+                <!-- /.advantages__img-block -->
+                <ul class="advantages__list">
+                    <li class="advantages__item">Свободный обмен валют в личном кабинете</li>
+                    <li class="advantages__item">Для совершения обмена нужно не более трех кликов</li>
+                    <li class="advantages__item">Никаких ограничений на объемы и число операций</li>
+                    <li class="advantages__item">Комиссия сервиса составляет всего 1,2%</li>
+                    <li class="advantages__item">Предоставление актуальной информации по курсам валют</li>
+                    <li class="advantages__item">Полная отчетность по транзакциям в архиве</li>
+                </ul>
+            </div>
+            <!-- /.advantages__inner -->
+            <p class="advantages__text">
+                Уже в январе 2021 с выходом мобильного приложения Unix все это можно будет делать на&nbsp;смартфоне.
+            </p>
+            <button class="reg-btn open-modal section__btn advantages__btn">Начни сейчас</button>
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- <div class="download-platform">
+        <div class="container">
+            <h2 class="download-platform-title animate-visible">
+                ОБМЕН ВАЛЮТ С UNIX<br />
+                ПРОЩЕ, БЫСТРЕЕ, УДОБНЕЕ
+            </h2>
+            <ul class="ullist">
+                <li>Свободный обмен валют в личном кабинете</li>
+                <br />
+                <li>Для совершения обмена нужно не более трех кликов</li>
+                <br />
+                <li>Никаких ограничений на объемы и число операций</li>
+                <br />
+                <li>Комиссия сервиса составляет всего 1,2%</li>
+                <br />
+                <li>Предоставление актуальной информации по курсам валют</li>
+                <br />
+                <li>Полная отчетность по транзакциям в архиве</li>
+                <br />
             </ul>
-            <ul>
-                <li><a href="https://live-forex.UnixTrade.trade/web-platform/" target="_blank">Платформа Live</a></li>
-                <li><a href="https://demo-forex.UnixTrade.trade/web-platform/" target="_blank">Платформа Demo</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://live-forex.UnixTrade.trade/cabinet/trader/login" target="_blank">Live кабинет</a></li>
-                <li><a href="https://demo-forex.UnixTrade.trade/cabinet/trader/login" target="_blank">Demo кабинет</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://www.sichbank.com.ua/ua/" target="_blank">Iнші послуги</a></li>
-            </ul>
-            <div class="sidebar-menu-contacts">
-                <label>Email</label>
-                <a href="mailto:info@UnixTrade.trade">info@UnixTrade.trade</a>
+            <p class="homepage-news-text animate-visible">Уже в январе 2021 с выходом мобильного приложения Unix все это можно будет делать на смартфоне.</p>
+        </div>
+    </div> -->
+    <section class="start-with">
+        <div class="start-with-bg"></div>
+        <div class="container">
+            <div class="label-blue">Unix Trade</div>
+            <h2>РЕФЕРАЛЬНАЯ ПРОГРАММА UNIX - ЗАРАБАТЫВАЙТЕ В&nbsp;КОМАНДЕ</h2>
+            <div class="referal">
+                <div class="percents">
+                    <div class="percblock"><span class="percnum">1</span><span class="percline percline1"></span><span
+                            class="percnum">10%</span></div>
+                    <div class="percblock"><span class="percnum">2</span><span class="percline percline2"></span><span
+                            class="percnum">7%</span></div>
+                    <div class="percblock"><span class="percnum">3</span><span class="percline percline3"></span><span
+                            class="percnum">5%</span></div>
+                    <div class="percblock"><span class="percnum">4</span><span class="percline percline4"></span><span
+                            class="percnum">3%</span></div>
+                    <div class="percblock"><span class="percnum">5</span><span class="percline percline5"></span><span
+                            class="percnum">1%</span></div>
+                </div>
+                <div class="reftext">
+                    <p class="p1">
+                        Партнерская программа зависит только от наших инвестиций и от тех продуктов которыми мы
+                        пользуемся. Если мы используем любые продукты, кроме торговли, мы имеем 3 линии в глубину и до
+                        12% с первой линии. Если
+                        же у нас есть инвестиция в продукт торговли от $200, у нас открывается возможность пользоваться
+                        другой партнерской системой.
+                    </p>
+                    <p class="p2">
+                        Есть система личных рангов, которая зависит от суммы инвестиций в продукт торговли от 200, 1000,
+                        10000, 20000, 50000, 100000, 500000, тем самым нам открывается партнерская система от 5 до 15
+                        линий в глубину и
+                        от 10 до 30% от дохода наших лично приглашенных партнеров. Пример, мы пригласили партнера на
+                        10000 евро, это значит что с лично приглашенных партнеров, мы будем получать 14% от дохода с
+                        инвестиции нашего
+                        партнера на постоянной основе, а это 280 евро каждый месяц.
+                    </p>
+                    <p class="p3">Мы получаем процент от дохода не только того партнера, которого мы пригласили, но
+                        также от приглашенных партнером участников, вплоть до последней. линии.</p>
+                </div>
+            </div>
+            <button class="reg-btn open-modal section__btn homepage-news__btn">Начни сейчас</button>
+        </div>
+    </section>
+    <!-- <div id="form" class="border-gradient-big">Управляй Своми Активами</div> -->
+    <!-- END PAGE CONTENT  -->
+    <!-- <div class="form-section start-with">
+        <div class="container">
+            <div class="label-blue animate-visible">Unix Trade</div>
+            <h2 class="animate-visible" style="color: #050505;">Пройти регистрацию</h2>
+            <form action="send.php" class="form" method="POST">
+                <input type="text" placeholder="Фамилия" name="fam" required="" />
+                <input type="text" placeholder="Имя" name="name" required="" />
+                <input type="email" placeholder="Email" name="email" required="" />
+                <input type="tel" placeholder="Телефон" name="phone" required="" class="phone_mask" />
+                <button class="btn btn_md btn_gradient">Отправить заявку</button>
+            </form>
+        </div>
+    </div> -->
+
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews__title-block section__title-block">
+                <span class="section__suptitle reviews__suptitle animate-visible">Reviews</span>
+                <h4 class="reviews__title section__title">Отзывы о Unix Trade</h4>
+            </div>
+            <!-- /.reviews__title-block section__title-block -->
+            <div class="reviews__inner">
+                <div class="reviews__item">
+                    <div class="reviews__content">
+                        <div class="reviews__rating">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                        </div>
+                        <span class="reviews__author">Petr Sidorov</span>
+                        <button class="reviews__item-btn">Ещё</button>
+                        <p class="reviews__text">Был приятно удивлен сервисом. На фоне других выделяется и прост в
+                            обращении. Могу и буду рекомендовать.
+                        </p>
+                    </div>
+                    <!-- /.reviews__content -->
+                </div>
+                <!-- /.reviews__item -->
+                <div class="reviews__item">
+                    <div class="reviews__content">
+                        <div class="reviews__rating">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                        </div>
+                        <span class="reviews__author">Evgeny Ivanov</span>
+                        <button class="reviews__item-btn">Ещё</button>
+                        <p class="reviews__text">Попробовал узнать больше о криптовалюте! Очень интересно стало на фоне
+                            всеобщего хайпа! Попал на ваш сервис. Спасибо за оперативную работу. Сразу видно, когда к
+                            клиенту хорошо относятся. Платформа удобная и приятная. Замечаний нет!
+                        </p>
+                    </div>
+                    <!-- /.reviews__content -->
+                </div>
+                <!-- /.reviews__item -->
+                <div class="reviews__item">
+                    <div class="reviews__content">
+                        <div class="reviews__rating">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                        </div>
+                        <span class="reviews__author">Anna Frank</span>
+                        <button class="reviews__item-btn">Ещё</button>
+                        <p class="reviews__text">Нам с мужем очень понравилось эта платформа. Мало того, что сразу твой
+                            кошелёк полнеет, так еще и много удобного. Переводили тоже. Муж сказал, что комиссии меньше
+                            нет нигде!
+                        </p>
+                    </div>
+                    <!-- /.reviews__content -->
+                </div>
+                <!-- /.reviews__item -->
+                <div class="reviews__item">
+                    <div class="reviews__content">
+                        <div class="reviews__rating">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                        </div>
+                        <span class="reviews__author">Dmitry Svirnov</span>
+                        <button class="reviews__item-btn">Ещё</button>
+                        <p class="reviews__text">Ну стало мне интересно, что это такое- заглянул, проверил! Понравилось.
+                            Быстро и удобно. Можно вложить в коин. Сейчас это интересно всем, думаю.
+                        </p>
+                    </div>
+                    <!-- /.reviews__content -->
+                </div>
+                <!-- /.reviews__item -->
+                <div class="reviews__item">
+                    <div class="reviews__content">
+                        <div class="reviews__rating">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                        </div>
+                        <span class="reviews__author">Semen Frolov</span>
+                        <button class="reviews__item-btn">Ещё</button>
+                        <p class="reviews__text">Спасибо за платформу! Я довольна. Можно хранить и менять и переводить.
+                            Серьезно! Оказывается, все намного проще чем казалось. Теперь с гордостью владею и пользуюсь
+                            сервисом. А депозит до 20% говорит о многом, как я считаю. Удобно все сделано в меню! Мне
+                            немного помогли разобраться, но при желании и самому это сделать можно очень быстро! В
+                            нынешнем цифровом мире такой вид услуг просто the must!!!
+                        </p>
+                    </div>
+                    <!-- /.reviews__content -->
+                </div>
+                <!-- /.reviews__item -->
+                <div class="reviews__item">
+                    <div class="reviews__content">
+                        <div class="reviews__rating">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                            <img src="bundles/app/images/star.png" alt="Star rating" class="reviews__ster">
+                        </div>
+                        <span class="reviews__author">Semen Frolov</span>
+                        <button class="reviews__item-btn">Ещё</button>
+                        <p class="reviews__text">Всем привет. Попробовал- неплохо. Есть замечания, но я очень люблю все
+                            критиковать. Сервис достойный и удобный. Не развод
+                        </p>
+                    </div>
+                    <!-- /.reviews__content -->
+                </div>
+                <!-- /.reviews__item -->
+            </div>
+            <!-- /.reviews__inner -->
+            <button class="reg-btn open-modal section__btn reviews__btn">Начни сейчас</button>
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <div class="team__title-block section__title-block">
+                <span class="section__suptitle team__suptitle animate-visible">Team</span>
+                <h4 class="team__title section__title">Наша команда</h4>
+            </div>
+            <!-- /.team__title-block section__title-block -->
+            <div class="team__inner">
+                <div class="team__item">
+                    <img src="bundles/app/images/team-img-1.jpeg" alt="" class="team__img">
+                    <div class="team__info">
+                        <span class="team__name">Вася Иванов</span>
+                        <span class="team__job">Руководитель</span>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="bundles/app/images/team-img-3.jpeg" alt="" class="team__img">
+                    <div class="team__info">
+                        <span class="team__name">Петя Сидоров</span>
+                        <span class="team__job">Главный разраб</span>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="bundles/app/images/team-img-2.jpeg" alt="" class="team__img">
+                    <div class="team__info">
+                        <span class="team__name">Женя Петрова</span>
+                        <span class="team__job">Главный HR</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.team__inner -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section class="partners">
+        <div class="container">
+            <div class="partners__title-block section__title-block">
+                <span class="section__suptitle partners__suptitle animate-visible">Partners</span>
+                <h4 class="partners__title section__title">Наши партнеры</h4>
+            </div>
+            <!-- /.partners__title-block section__title-block -->
+            <div class="partners__inner">
+                <div class="partners__img-block">
+                    <img src="bundles/app/images/lufthansa.png" alt="" class="partners__img">
+                </div>
+                <div class="partners__img-block">
+                    <img src="bundles/app/images/coinbase.png" alt="" class="partners__img">
+                </div>
+                <div class="partners__img-block">
+                    <img src="bundles/app/images/coindesk.png" alt="" class="partners__img">
+                </div>
+                <div class="partners__img-block">
+                    <img src="bundles/app/images/pci-ssc.png" alt="" class="partners__img">
+                </div>
+                <div class="partners__img-block">
+                    <img src="bundles/app/images/forklog.png" alt="" class="partners__img">
+                </div>
+            </div>
+            <!-- /.partners__inner -->
+            <button class="reg-btn open-modal section__btn partners__btn">Начни сейчас</button>
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h6>Общее</h6>
+                    <a href="mailto:support@UnixTrade.trade">Поддержка</a>
+                    <a href="https://unix.finance">Про Unix.Finance</a>
+                </div>
+                <div class="footer-links footer-contacts">
+                    <h6>Подписаться на обновления</h6>
+                    <fieldset>
+                        <form id="subscribe-email" action="/subscribeAjax" method="post" novalidate="novalidate"
+                              autocomplete="off">
+                            <input id="subscribe-inp" class="footer-mail" name="email" placeholder="E-mail address..."/>
+                            <input type="hidden" id="zc_gad" name="zc_gad" value=""/>
+                            <button id="subscribe-btn" type="submit" class="btn btn_blue">Отправить</button>
+                        </form>
+                    </fieldset>
+                    <div class="footer-social">
+                        <ul>
+                            <li><a href="https://www.facebook.com/UnixTrade.trade/" target="_blank"
+                                   class="footer-social-icon facebook"></a></li>
+                            <li><a href="https://www.instagram.com/UnixTrade.trade" target="_blank"
+                                   class="footer-social-icon instagram"></a></li>
+                            <li><a href="https://t.me/UnixTradeTRADE" target="_blank"
+                                   class="footer-social-icon telegram"></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCe9ebR_d0QwxcvfB3inkfKQ" target="_blank"
+                                   class="footer-social-icon youtube"></a></li>
+                            <li>
+                                <a href="https://invite.viber.com/?g2=AQAhVxAevI4if0p7f99ZwU208BYzHHwJ4XrquMRpsG7WVPpmytopkVpE7H%2BxZddP"
+                                   target="_blank" class="footer-social-icon viber"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-copy">
+                    <p>
+                        &copy;&nbsp;© 2016-2021 Все права защищены
+                        <span class="footer-terms-link"> </span>
+                    </p>
+                    <a href="https://itt.team/" title="Розробка сайтів, торгових платформ" class="itt-logo">
+                        <div class="itt-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h4>
+                            integrity
+                            <br/>
+                            trading
+                            <br/>
+                            technology
+                        </h4>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="switch-sidebar-menu">
+        <div class="footer-texts">
+            <div class="container">
+                <div>
+                    <h1>Disclaimer</h1>
+                    <p>
+                        Отказ от ответственности за доходы и данные о доходах, сделанные c dizzyale.com (коллективно с
+                        «этим Веб-сайтом» ) используются только в качестве наглядного примера вашего потенциала
+                        заработка. Успех тех, кто
+                        находится в отзывах и других примерах, является исключительным результатом и, следовательно, не
+                        является гарантией того, что вы или другие люди добьетесь таких же результатов. Индивидуальные
+                        результаты могут
+                        отличаться и полностью зависят от вашего использования dizzyale.com . Этот сайт не несет
+                        ответственности за ваши действия. Вы несете полную ответственность за свои действия и решения
+                        при использовании
+                        продуктов и услуг, поэтому вы должны всегда проявлять осторожность и должную осмотрительность.
+                        Вы соглашаетесь с тем, что данный Веб-сайт не несет никакой ответственности за результаты
+                        использования наших
+                        продуктов и услуг. Ознакомьтесь с нашими Правилами и Условиями для полного отказа от
+                        ответственности и других ограничений. Этот веб-сайт может получить компенсацию за продукты и
+                        услуги, которые рекомендует
+                        вам. Если вы не хотите, чтобы этот сайт получил вознаграждение за рекомендации, мы рекомендуем
+                        вам поискать в Интернете аналогичный продукт по несвязанной ссылке. ©2021
+                    </p>
+                    <p>
+                        Не все товары или услуги будут доступны для всех инвесторов: они предназначены только клиентам в
+                        тех странах и регионах, где это позволяет законодательство и положения. Торговля валютами и
+                        драгоценными
+                        металлами может быть ограничена в различных странах; резиденты этих стран и / или определенные
+                        категории инвесторов могут не иметь права на определенные товары или услуги, о которых идет речь
+                        в этом сайте.
+                        Информация, содержащаяся в этом документе, не предназначена для распространения или
+                        использования любым лицом или юридическим лицом в любой юрисдикции или стране, где такое
+                        распространение или использование
+                        противоречит законодательству или нормативно-правовым актам. Этот сайт не предназначен для
+                        использования любым лицом в любой юрисдикции, когда публикация или доступность наших услуг
+                        запрещена из-за
+                        национальности, места жительства этого лица или другое. Лица, имеющие эти ограничения не должны
+                        использовать этот веб-сайт.
+                    </p>
+                    <p>
+                        Общие риски в торговле валютами и банковскими металлами на условиях маржинальной торговли:
+                        Торговля валютами и банковскими металлами на условиях маржинальной торговли (то есть с
+                        использованием плеча) подходит
+                        не для всех. Инвестирование в такие инструменты предполагает высокую степень риска потери.
+                        Прежде чем торговать маржой, вы должны знать о рисках, связанных с колебанием стоимости таких
+                        инструментов, что может
+                        привести колебания стоимости вашей инвестиции. Любой тип рыночной или торговой спекуляции,
+                        который может принести необычно высокую доходность инвестиций, склонен к чрезвычайно высоких
+                        рисков. Большие потери
+                        могут понести в течение сравнительно короткого периода за неблагоприятных рыночных изменения или
+                        рост позиций. Прежде чем принять решение о торговле валютой и банковскими металлами на условиях
+                        маржинальной
+                        торговли, следует внимательно рассмотреть свои инвестиционные цели, уровень опыта и аппетит к
+                        риску. Вы должны торговать только той частью собственных активов, которой вы распоряжаетесь, и
+                        не можете позволить
+                        себе потерять целиком: только ваши избыточные средства должны быть подвержены риску, а если у
+                        вас нет таких излишков, вы должны обязательно избегать участия в маржинальной торговле. В случае
+                        сомнений
+                        относительно рисков, связанных с валютным обмена, торговли банковскими металлами на условиях
+                        маржинальной торговли, вы должны проконсультироваться с любым независимым финансовым
+                        консультантом и спросить любую
+                        необходимую информацию.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<div class="sidebar-menu">
+    <ul>
+        <li><a href="/trading">Обменник</a></li>
+        <li><a href="/online-charts">Аналитика</a></li>
+        <li><a href="/platform">Платформа</a></li>
+    </ul>
+    <ul>
+        <li><a href="/register/live">Відкрити рахунок</a></li>
+        <li><a href="https://demo-forex.UnixTrade.trade/cabinet/demo?lang=uk">Демо</a></li>
+    </ul>
+    <ul>
+        <li><a href="https://live-forex.UnixTrade.trade/web-platform/" target="_blank">Платформа Live</a></li>
+        <li><a href="https://demo-forex.UnixTrade.trade/web-platform/" target="_blank">Платформа Demo</a></li>
+    </ul>
+    <ul>
+        <li><a href="https://live-forex.UnixTrade.trade/cabinet/trader/login" target="_blank">Live кабинет</a></li>
+        <li><a href="https://demo-forex.UnixTrade.trade/cabinet/trader/login" target="_blank">Demo кабинет</a></li>
+    </ul>
+    <ul>
+        <li><a href="https://www.sichbank.com.ua/ua/" target="_blank">Iнші послуги</a></li>
+    </ul>
+    <div class="sidebar-menu-contacts">
+        <label>Email</label>
+        <a href="mailto:info@UnixTrade.trade">info@UnixTrade.trade</a>
+    </div>
+</div>
+<div class="switch-sidebar-menu">
             <span class="close-wrap">
                 <span class="close-line close-line1"></span>
                 <span class="close-line close-line2"></span>
             </span>
-        </div>
+</div>
 
-        <span class="popup-toggle" id="popup_sub_success" data-target="popup-sub-success" style="display: none;">Sign In</span>
+<span class="popup-toggle" id="popup_sub_success" data-target="popup-sub-success" style="display: none;">Sign In</span>
 
-        <div class="box-framed bg-white popup popup-sub-success">
-            <div class="popup-close">
+<div class="box-framed bg-white popup popup-sub-success">
+    <div class="popup-close">
                 <span class="close-wrap">
                     <span class="close-line close-line1"></span>
                     <span class="close-line close-line2"></span>
                 </span>
-            </div>
-            <h2 class="popup-tittle">Спасибо, мы будем рассказывать Вам только самое важное.</h2>
-            <br />
-        </div>
+    </div>
+    <h2 class="popup-tittle">Спасибо, мы будем рассказывать Вам только самое важное.</h2>
+    <br/>
+</div>
 
-        <div class="popup-shadow"></div>
-        <div class="box-framed bg-white popup popup-login">
-            <div class="popup-close">
+<div class="popup-shadow"></div>
+<div class="box-framed bg-white popup popup-login">
+    <div class="popup-close">
                 <span class="close-wrap">
                     <span class="close-line close-line1"></span>
                     <span class="close-line close-line2"></span>
                 </span>
-            </div>
-            <h2>Sign In</h2>
-            <form name="sign_in" method="post">
-                <fieldset class="popup-login-username">
-                    <label for="sign_in_username" class="required focused">Username</label>
-                    <input type="text" id="sign_in_username" name="sign_in[username]" />
-                    <div class="field-border focused"></div>
-                    <div class="field-error"></div>
-                </fieldset>
+    </div>
+    <h2>Sign In</h2>
+    <form name="sign_in" method="post">
+        <fieldset class="popup-login-username">
+            <label for="sign_in_username" class="required focused">Username</label>
+            <input type="text" id="sign_in_username" name="sign_in[username]"/>
+            <div class="field-border focused"></div>
+            <div class="field-error"></div>
+        </fieldset>
 
-                <fieldset class="popup-login-password">
-                    <label for="sign_in_password" class="required focused">Password</label>
-                    <input type="password" id="sign_in_password" name="sign_in[password]" />
-                    <div class="field-border focused"></div>
-                    <div class="field-error"></div>
-                </fieldset>
+        <fieldset class="popup-login-password">
+            <label for="sign_in_password" class="required focused">Password</label>
+            <input type="password" id="sign_in_password" name="sign_in[password]"/>
+            <div class="field-border focused"></div>
+            <div class="field-error"></div>
+        </fieldset>
 
-                <a href="" class="popup-toggle popup-login-fogot" data-target="popup-forgot">Do you forgot password?</a>
-                <fieldset class="popup-login-keepsigned">
-                    <label for="sign_in_keepsigned" class="checkbox"><input type="checkbox" id="sign_in_keepsigned" name="sign_in[keepsigned]" value="1" />Keep signed in</label>
-                </fieldset>
-                <button type="submit" class="btn btn_blue">Continue</button>
-                <div class="popup-login-newhere">
-                    New here?<br />
-                    <a href="">Create an account</a>
-                </div>
-                <input type="hidden" id="sign_in__token" name="sign_in[_token]" value="tzGEDW8tgKas8NacAR7BIZXjuk1FdhtuTxlNBtstLmE" />
-            </form>
+        <a href="" class="popup-toggle popup-login-fogot" data-target="popup-forgot">Do you forgot password?</a>
+        <fieldset class="popup-login-keepsigned">
+            <label for="sign_in_keepsigned" class="checkbox"><input type="checkbox" id="sign_in_keepsigned"
+                                                                    name="sign_in[keepsigned]" value="1"/>Keep signed in</label>
+        </fieldset>
+        <button type="submit" class="btn btn_blue">Continue</button>
+        <div class="popup-login-newhere">
+            New here?<br/>
+            <a href="">Create an account</a>
         </div>
+        <input type="hidden" id="sign_in__token" name="sign_in[_token]"
+               value="tzGEDW8tgKas8NacAR7BIZXjuk1FdhtuTxlNBtstLmE"/>
+    </form>
+</div>
 
-        <div class="box-framed bg-white popup popup-forgot">
-            <div class="popup-close">
+<div class="box-framed bg-white popup popup-forgot">
+    <div class="popup-close">
                 <span class="close-wrap">
                     <span class="close-line close-line1"></span>
                     <span class="close-line close-line2"></span>
                 </span>
-            </div>
-            <h2>Forgot password?</h2>
-            <p>Enter your username and we will send you instructions on how to reset your password</p>
-            <form name="reset_password" method="post">
-                <fieldset class="popup-forgot-email">
-                    <label for="reset_password_for_username" class="required">Username</label>
-                    <input type="text" id="reset_password_for_username" name="reset_password[for_username]" />
-                    <div class="field-border"></div>
-                    <div class="field-error"></div>
-                </fieldset>
-                <button class="btn btn_blue btn_md">Reset Password</button>
-                <a href="" class="popup-toggle" data-target="popup-login">← Back</a>
+    </div>
+    <h2>Forgot password?</h2>
+    <p>Enter your username and we will send you instructions on how to reset your password</p>
+    <form name="reset_password" method="post">
+        <fieldset class="popup-forgot-email">
+            <label for="reset_password_for_username" class="required">Username</label>
+            <input type="text" id="reset_password_for_username" name="reset_password[for_username]"/>
+            <div class="field-border"></div>
+            <div class="field-error"></div>
+        </fieldset>
+        <button class="btn btn_blue btn_md">Reset Password</button>
+        <a href="" class="popup-toggle" data-target="popup-login">← Back</a>
 
-                <input type="hidden" id="reset_password__token" name="reset_password[_token]" value="RJyWVf_qe0aI1QQFj0E4o6cAbQR3EJalbh4KOPt5Pfw" />
-            </form>
-        </div>
+        <input type="hidden" id="reset_password__token" name="reset_password[_token]"
+               value="RJyWVf_qe0aI1QQFj0E4o6cAbQR3EJalbh4KOPt5Pfw"/>
+    </form>
+</div>
 
-        <div class="box-framed bg-white popup popup-msg">
-            <div class="popup-close">
+<div class="box-framed bg-white popup popup-msg">
+    <div class="popup-close">
                 <span class="close-wrap">
                     <span class="close-line close-line1"></span>
                     <span class="close-line close-line2"></span>
                 </span>
-            </div>
-            <div class="popup-msg-info"></div>
-        </div>
+    </div>
+    <div class="popup-msg-info"></div>
+</div>
 
-        <script>
-            $(".phone_mask").mask("+7(999)999-99-99");
-        </script>
+<script>
+    $(".phone_mask").mask("+7(999)999-99-99");
+</script>
 
-        <!-- BEGIN VENDOR JS -->
-        <script src="js/9ddf5f8.js"></script>
-        <!-- END VENDOR JS -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
-        
-        <script src="js/8508a54.js"></script>
-    </body>
+<!-- BEGIN VENDOR JS -->
+<script src="js/9ddf5f8.js"></script>
+<!-- END VENDOR JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+        type="text/javascript"></script>
+<script src="js/8508a54.js"></script>
+<script>
+    $(".form").on('submit', function (e) {
+        e.preventDefault();
+        if ($('.input-invalid').length === 0) {
+            $.ajax({
+                url: "sendPhone.php",
+                dataType: "json",
+                type: "POST",
+                data: "phone=" + $('.form__input.phone-input.valid').val(),
+            });
+
+            $('.tel-confirm-modal').addClass('tel-confirm-modal--active');
+            $('.tel-confirm-overlay').addClass('tel-confirm-modal__overlay--active');
+
+        }
+    });
+
+    $(".tel-confirm-modal__form").on('submit', function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: "confirmPhone.php",
+            dataType: "json",
+            type: "POST",
+            data: "code=" + $('.tel-confirm-modal__input').val(),
+            success: function (response) {
+                console.log(response.status);
+                if (response.status === 'ok') {
+                    $('.sign-up-form__form').off();
+                    $('.sign-up-form__form').submit();
+                }
+            }
+        });
+    });
+</script>
+</body>
 </html>

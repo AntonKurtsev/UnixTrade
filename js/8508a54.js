@@ -104,7 +104,7 @@ $('.mobile-menu__overlay').click(function() {
 
 
 // Mask input
-$('.phone-input').mask('+380(99)999-99-99', {
+$('.phone-input').mask('+38(999)999-99-99', {
     translation: {
         '9': {
                 pattern: /[0-9]/,
@@ -135,6 +135,11 @@ $('.form, .sign-up-form__form').each(function(){
                 equalTo: "#password",
                 minlength: 8,
             },
+            password__confirmation__modal: {
+                required: true,
+                equalTo: "#password__modal",
+                minlength: 8,
+            },
         },
         messages: {
             email: {
@@ -152,8 +157,12 @@ $('.form, .sign-up-form__form').each(function(){
             password__confirmation: {
                 required: "Пожалуйста повторите пароль",
                 equalTo: "Пароли должны совпадать",
-            }
-        }
+            },
+            password__confirmation__modal: {
+                required: "Пожалуйста повторите пароль",
+                equalTo: "Пароли должны совпадать",
+            },
+        },
     });
 });
 
